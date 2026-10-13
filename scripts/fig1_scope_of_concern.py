@@ -247,17 +247,17 @@ def draw_flow(ax, fc, width, height):
             ('Allocation check', 'replay: %d models, %s recorded episodes \u00b7 live: %d models, %s episodes'
              % (fc['replay_k'], thousands(fc['replay_n']), fc['live_k'], thousands(fc['live_n'])))]
     not_used = {2}
-    right = [('Run O: original design, high-capability models',
+    right = [('Experiment 1 repeated, high-capability models',
               '%d models \u00b7 %s agentic episodes \u00b7 policy not stated' % (fc['O'][0], thousands(fc['O'][1]))),
-             ('Run A: role experiment, balanced pairs',
+             ('Role instructions, matched pairs',
               '%d models \u00b7 %s agentic episodes \u00b7 policy stated' % (fc['A'][0], thousands(fc['A'][1]))),
-             ('Run P: priority identification',
+             ('Priority identification',
               '%d models run, %d analysed \u00b7 %s probe replies \u00b7 policy stated'
               % (fc['P'][0], fc['P_analysed'], thousands(fc['P'][1]))),
-             ('Run C: judgment before action',
+             ('Judgment before action',
               '%d models $\\times$ %d scenarios $\\times$ %d modes \u00b7 policy stated'
               % (fc['C'][0], fc['C_scen'], fc['C_modes'])),
-             ('Run D: allocation check, live',
+             ('Allocation check, live',
               '%d models \u00b7 %s agentic episodes, plus %s no-check \u00b7 policy stated'
               % (fc['D'][0], thousands(fc['D'][1]), thousands(fc['D_none'])))]
     lines = []
@@ -271,9 +271,9 @@ def draw_flow(ax, fc, width, height):
                                   fontweight='bold', color=INK, zorder=3), x + bw))
             lines.append((ax.text(x + 0.12, yy - 0.115, sub, ha='left', va='center', fontsize=7.3, color=INK,
                                   zorder=3), x + bw))
-    ax.text(xl + bw / 2, height - 0.15, 'Original study', ha='center', va='center', fontsize=8.8, fontweight='bold',
+    ax.text(xl + bw / 2, height - 0.15, 'Experiment 1', ha='center', va='center', fontsize=8.8, fontweight='bold',
             color='#5B6869')
-    ax.text(xr + bw / 2, height - 0.15, 'Revision runs', ha='center', va='center', fontsize=8.8, fontweight='bold',
+    ax.text(xr + bw / 2, height - 0.15, 'Experiment 2', ha='center', va='center', fontsize=8.8, fontweight='bold',
             color=INK)
     for a_row, b_row in ((0, 0), (0, 1), (1, 1), (2, 2), (3, 3), (4, 4)):
         y0, y1 = yc[a_row], yc[b_row]
@@ -300,7 +300,7 @@ def draw_policy_line(ax, width):
     ax.set_xlim(0, width); ax.set_ylim(0, 1); ax.axis('off')
     ax.add_patch(FancyBboxPatch((0.03, 0.08), width - 0.06, 0.84, boxstyle='round,pad=0.0,rounding_size=0.10',
                                 fc=LIGHT_GREY, ec=GREY, lw=0.8))
-    ax.text(width / 2, 0.50, 'Policy statement shown to every role (revision Runs A, P, C and D)', ha='center', va='center',
+    ax.text(width / 2, 0.50, 'Policy statement shown to every role in experiment 2 (except experiment 1 repeated)', ha='center', va='center',
             fontsize=8.0, color=INK)
 
 

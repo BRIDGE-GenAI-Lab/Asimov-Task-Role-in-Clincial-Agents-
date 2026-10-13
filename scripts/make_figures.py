@@ -794,7 +794,7 @@ def appendix_fig2():
                clip_on=False, zorder=3)
         a.annotate(model_name(R, m), (x_lab, y_lab), xytext=(6, 0), textcoords="offset points", fontsize=T_SMALL,
                    color=INK, va="center", ha="left", annotation_clip=False)
-    a.annotate("%d original models" % len(orig), (xs[0], 4), xytext=(xs[0] - 0.30, 100), textcoords="data",
+    a.annotate("%d experiment 1 models" % len(orig), (xs[0], 4), xytext=(xs[0] - 0.30, 100), textcoords="data",
                fontsize=T_SMALL, color=GREY, va="top", ha="left")
     a.set_xticks(xs)
     a.set_xticklabels([ROLE_LABEL[r] for r in ROLES_O], fontsize=7.6)
