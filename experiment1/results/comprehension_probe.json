@@ -1,0 +1,383 @@
+{
+  "per_model": {
+    "deepseek-v4-flash": {
+      "n": 100,
+      "p_states_correct": [
+        100.0,
+        96.3,
+        100.0
+      ],
+      "p_grab_given_correct": [
+        95.0,
+        88.8,
+        97.8
+      ],
+      "n_knew_and_grabbed": 95
+    },
+    "deepseek-v4-pro": {
+      "n": 100,
+      "p_states_correct": [
+        100.0,
+        96.3,
+        100.0
+      ],
+      "p_grab_given_correct": [
+        83.0,
+        74.5,
+        89.1
+      ],
+      "n_knew_and_grabbed": 83
+    },
+    "llama-4-maverick": {
+      "n": 100,
+      "p_states_correct": [
+        100.0,
+        96.3,
+        100.0
+      ],
+      "p_grab_given_correct": [
+        59.0,
+        49.2,
+        68.1
+      ],
+      "n_knew_and_grabbed": 59
+    },
+    "claude-haiku45": {
+      "n": 100,
+      "p_states_correct": [
+        100.0,
+        96.3,
+        100.0
+      ],
+      "p_grab_given_correct": [
+        52.0,
+        42.3,
+        61.5
+      ],
+      "n_knew_and_grabbed": 52
+    },
+    "gpt-5.1": {
+      "n": 100,
+      "p_states_correct": [
+        100.0,
+        96.3,
+        100.0
+      ],
+      "p_grab_given_correct": [
+        53.0,
+        43.3,
+        62.5
+      ],
+      "n_knew_and_grabbed": 53
+    },
+    "gemma3-12b-qat": {
+      "n": 8,
+      "p_states_correct": [
+        100.0,
+        67.6,
+        100.0
+      ],
+      "p_grab_given_correct": [
+        75.0,
+        40.9,
+        92.9
+      ],
+      "n_knew_and_grabbed": 6
+    },
+    "gpt-oss-120b": {
+      "n": 100,
+      "p_states_correct": [
+        100.0,
+        96.3,
+        100.0
+      ],
+      "p_grab_given_correct": [
+        97.0,
+        91.5,
+        99.0
+      ],
+      "n_knew_and_grabbed": 97
+    },
+    "qwen3.5-9b": {
+      "n": 100,
+      "p_states_correct": [
+        49.0,
+        39.4,
+        58.7
+      ],
+      "p_grab_given_correct": [
+        81.6,
+        68.6,
+        90.0
+      ],
+      "n_knew_and_grabbed": 40
+    },
+    "gemini-2.5-flash": {
+      "n": 42,
+      "p_states_correct": [
+        95.2,
+        84.2,
+        98.7
+      ],
+      "p_grab_given_correct": [
+        100.0,
+        91.2,
+        100.0
+      ],
+      "n_knew_and_grabbed": 40
+    },
+    "gemma4-31b-o2": {
+      "n": 47,
+      "p_states_correct": [
+        100.0,
+        92.4,
+        100.0
+      ],
+      "p_grab_given_correct": [
+        80.9,
+        67.5,
+        89.6
+      ],
+      "n_knew_and_grabbed": 38
+    },
+    "gpt-oss-20b": {
+      "n": 50,
+      "p_states_correct": [
+        100.0,
+        92.9,
+        100.0
+      ],
+      "p_grab_given_correct": [
+        78.0,
+        64.8,
+        87.2
+      ],
+      "n_knew_and_grabbed": 39
+    },
+    "nemotron-ultra-550b": {
+      "n": 50,
+      "p_states_correct": [
+        100.0,
+        92.9,
+        100.0
+      ],
+      "p_grab_given_correct": [
+        68.0,
+        54.2,
+        79.2
+      ],
+      "n_knew_and_grabbed": 34
+    },
+    "llama4-scout-o2": {
+      "n": 100,
+      "p_states_correct": [
+        94.0,
+        87.5,
+        97.2
+      ],
+      "p_grab_given_correct": [
+        69.1,
+        59.2,
+        77.6
+      ],
+      "n_knew_and_grabbed": 65
+    },
+    "phi4-o2": {
+      "n": 100,
+      "p_states_correct": [
+        95.0,
+        88.8,
+        97.8
+      ],
+      "p_grab_given_correct": [
+        78.9,
+        69.7,
+        85.9
+      ],
+      "n_knew_and_grabbed": 75
+    },
+    "granite41-30b-o2": {
+      "n": 100,
+      "p_states_correct": [
+        100.0,
+        96.3,
+        100.0
+      ],
+      "p_grab_given_correct": [
+        36.0,
+        27.3,
+        45.8
+      ],
+      "n_knew_and_grabbed": 36
+    },
+    "mistral-medium35-o2": {
+      "n": 100,
+      "p_states_correct": [
+        100.0,
+        96.3,
+        100.0
+      ],
+      "p_grab_given_correct": [
+        56.0,
+        46.2,
+        65.3
+      ],
+      "n_knew_and_grabbed": 56
+    },
+    "glm47-flash-o2": {
+      "n": 100,
+      "p_states_correct": [
+        98.0,
+        93.0,
+        99.4
+      ],
+      "p_grab_given_correct": [
+        63.3,
+        53.4,
+        72.1
+      ],
+      "n_knew_and_grabbed": 62
+    },
+    "qwen35-122b-o2": {
+      "n": 100,
+      "p_states_correct": [
+        100.0,
+        96.3,
+        100.0
+      ],
+      "p_grab_given_correct": [
+        81.0,
+        72.2,
+        87.5
+      ],
+      "n_knew_and_grabbed": 81
+    },
+    "olmo2-32b-o2": {
+      "n": 100,
+      "p_states_correct": [
+        98.0,
+        93.0,
+        99.4
+      ],
+      "p_grab_given_correct": [
+        46.9,
+        37.4,
+        56.7
+      ],
+      "n_knew_and_grabbed": 46
+    },
+    "yi-34b-o2": {
+      "n": 100,
+      "p_states_correct": [
+        92.0,
+        85.0,
+        95.9
+      ],
+      "p_grab_given_correct": [
+        27.2,
+        19.1,
+        37.0
+      ],
+      "n_knew_and_grabbed": 25
+    },
+    "falcon3-10b-o2": {
+      "n": 100,
+      "p_states_correct": [
+        99.0,
+        94.6,
+        99.8
+      ],
+      "p_grab_given_correct": [
+        52.5,
+        42.8,
+        62.1
+      ],
+      "n_knew_and_grabbed": 52
+    }
+  },
+  "pooled": {
+    "n": 1797,
+    "p_states_correct": [
+      95.7,
+      94.7,
+      96.6
+    ],
+    "p_grab_given_correct": [
+      65.9,
+      63.7,
+      68.1
+    ]
+  },
+  "descriptive_models": {
+    "qwen3.5-4b": {
+      "n": 89,
+      "p_states_correct": [
+        74.2,
+        64.2,
+        82.1
+      ],
+      "p_grab_given_correct": [
+        69.7,
+        57.8,
+        79.4
+      ],
+      "n_knew_and_grabbed": 46
+    },
+    "qwen3.5-2b": {
+      "n": 50,
+      "p_states_correct": [
+        50.0,
+        36.6,
+        63.4
+      ],
+      "p_grab_given_correct": [
+        40.0,
+        23.4,
+        59.3
+      ],
+      "n_knew_and_grabbed": 10
+    },
+    "qwen3.5-0.8b": {
+      "n": 50,
+      "p_states_correct": [
+        42.0,
+        29.4,
+        55.8
+      ],
+      "p_grab_given_correct": [
+        28.6,
+        13.8,
+        50.0
+      ],
+      "n_knew_and_grabbed": 6
+    },
+    "gemma4-e4b-qat": {
+      "n": 100,
+      "p_states_correct": [
+        100.0,
+        96.3,
+        100.0
+      ],
+      "p_grab_given_correct": [
+        93.0,
+        86.3,
+        96.6
+      ],
+      "n_knew_and_grabbed": 93
+    },
+    "gemma4-e2b-qat": {
+      "n": 100,
+      "p_states_correct": [
+        99.0,
+        94.6,
+        99.8
+      ],
+      "p_grab_given_correct": [
+        88.9,
+        81.2,
+        93.7
+      ],
+      "n_knew_and_grabbed": 88
+    }
+  }
+}

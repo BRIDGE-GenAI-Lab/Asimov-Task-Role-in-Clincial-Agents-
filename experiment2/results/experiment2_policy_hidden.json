@@ -1,0 +1,845 @@
+{
+  "a0": {
+    "across_models": {
+      "devotion_minus_steward": {
+        "change": {
+          "k": 5,
+          "max": 48.07256235827664,
+          "mean": -7.177324263038548,
+          "min": -54.0,
+          "range": [
+            -54.0,
+            48.07256235827664
+          ]
+        },
+        "hidden": {
+          "k": 5,
+          "max": 90.0,
+          "mean": 31.836734693877553,
+          "min": 0.0,
+          "range": [
+            0.0,
+            90.0
+          ]
+        },
+        "shown": {
+          "k": 5,
+          "max": 97.95918367346938,
+          "mean": 39.014058956916095,
+          "min": 10.0,
+          "range": [
+            10.0,
+            97.95918367346938
+          ]
+        }
+      },
+      "role_span": {
+        "appropriate": {
+          "hidden_minus_shown": [
+            -46.4,
+            -34.8
+          ]
+        },
+        "inappropriate": {
+          "hidden_minus_shown": [
+            -0.8166666666666671,
+            12.09016697588126
+          ]
+        }
+      },
+      "roles": {
+        "devotion": {
+          "appropriate": {
+            "hidden": {
+              "k": 5,
+              "max": 100.0,
+              "mean": 60.4,
+              "min": 2.0,
+              "range": [
+                2.0,
+                100.0
+              ]
+            },
+            "hidden_minus_shown": {
+              "k": 5,
+              "max": 0.0,
+              "mean": -34.8,
+              "min": -84.0,
+              "range": [
+                -84.0,
+                0.0
+              ]
+            },
+            "shown": {
+              "k": 5,
+              "max": 100.0,
+              "mean": 95.2,
+              "min": 86.0,
+              "range": [
+                86.0,
+                100.0
+              ]
+            }
+          },
+          "inappropriate": {
+            "hidden": {
+              "k": 5,
+              "max": 100.0,
+              "mean": 50.86666666666667,
+              "min": 0.0,
+              "range": [
+                0.0,
+                100.0
+              ]
+            },
+            "hidden_minus_shown": {
+              "k": 5,
+              "max": 47.916666666666664,
+              "mean": -0.8166666666666671,
+              "min": -44.0,
+              "range": [
+                -44.0,
+                47.916666666666664
+              ]
+            },
+            "shown": {
+              "k": 5,
+              "max": 98.0,
+              "mean": 51.68333333333334,
+              "min": 10.416666666666666,
+              "range": [
+                10.416666666666666,
+                98.0
+              ]
+            }
+          }
+        },
+        "neutral": {
+          "appropriate": {
+            "hidden": {
+              "k": 5,
+              "max": 100.0,
+              "mean": 50.0,
+              "min": 0.0,
+              "range": [
+                0.0,
+                100.0
+              ]
+            },
+            "hidden_minus_shown": {
+              "k": 5,
+              "max": 0.0,
+              "mean": -46.4,
+              "min": -90.0,
+              "range": [
+                -90.0,
+                0.0
+              ]
+            },
+            "shown": {
+              "k": 5,
+              "max": 100.0,
+              "mean": 96.4,
+              "min": 90.0,
+              "range": [
+                90.0,
+                100.0
+              ]
+            }
+          },
+          "inappropriate": {
+            "hidden": {
+              "k": 5,
+              "max": 97.95918367346938,
+              "mean": 35.75547309833024,
+              "min": 0.0,
+              "range": [
+                0.0,
+                97.95918367346938
+              ]
+            },
+            "hidden_minus_shown": {
+              "k": 5,
+              "max": 81.63265306122449,
+              "mean": 12.09016697588126,
+              "min": -20.0,
+              "range": [
+                -20.0,
+                81.63265306122449
+              ]
+            },
+            "shown": {
+              "k": 5,
+              "max": 56.0,
+              "mean": 23.66530612244898,
+              "min": 0.0,
+              "range": [
+                0.0,
+                56.0
+              ]
+            }
+          }
+        },
+        "steward": {
+          "appropriate": {
+            "hidden": {
+              "k": 5,
+              "max": 94.0,
+              "mean": 57.2,
+              "min": 0.0,
+              "range": [
+                0.0,
+                94.0
+              ]
+            },
+            "hidden_minus_shown": {
+              "k": 5,
+              "max": -6.0,
+              "mean": -41.2,
+              "min": -92.0,
+              "range": [
+                -92.0,
+                -6.0
+              ]
+            },
+            "shown": {
+              "k": 5,
+              "max": 100.0,
+              "mean": 98.4,
+              "min": 92.0,
+              "range": [
+                92.0,
+                100.0
+              ]
+            }
+          },
+          "inappropriate": {
+            "hidden": {
+              "k": 5,
+              "max": 72.0,
+              "mean": 19.240816326530613,
+              "min": 0.0,
+              "range": [
+                0.0,
+                72.0
+              ]
+            },
+            "hidden_minus_shown": {
+              "k": 5,
+              "max": 18.0,
+              "mean": 6.440816326530611,
+              "min": -6.0,
+              "range": [
+                -6.0,
+                18.0
+              ]
+            },
+            "shown": {
+              "k": 5,
+              "max": 54.0,
+              "mean": 12.8,
+              "min": 0.0,
+              "range": [
+                0.0,
+                54.0
+              ]
+            }
+          }
+        }
+      }
+    },
+    "models": [
+      "e2_dir-frontier-qwen",
+      "e2_dir-deepseek-v4-flash",
+      "e2_dir-claude-haiku-4-5",
+      "e2_dir-gemma-4-31b",
+      "e2_dir-phi-4"
+    ],
+    "per_model": {
+      "e2_dir-claude-haiku-4-5": {
+        "devotion_minus_steward": {
+          "change": -16.0,
+          "hidden": 0.0,
+          "hidden_pairs": 50,
+          "shown": 16.0,
+          "shown_pairs": 50
+        },
+        "roles": {
+          "devotion": {
+            "appropriate": {
+              "hidden": 2.0,
+              "hidden_minus_shown": -84.0,
+              "pairs": 50,
+              "shown": 86.0
+            },
+            "inappropriate": {
+              "hidden": 0.0,
+              "hidden_minus_shown": -22.0,
+              "pairs": 50,
+              "shown": 22.0
+            }
+          },
+          "neutral": {
+            "appropriate": {
+              "hidden": 0.0,
+              "hidden_minus_shown": -90.0,
+              "pairs": 50,
+              "shown": 90.0
+            },
+            "inappropriate": {
+              "hidden": 0.0,
+              "hidden_minus_shown": -20.0,
+              "pairs": 50,
+              "shown": 20.0
+            }
+          },
+          "steward": {
+            "appropriate": {
+              "hidden": 0.0,
+              "hidden_minus_shown": -92.0,
+              "pairs": 50,
+              "shown": 92.0
+            },
+            "inappropriate": {
+              "hidden": 0.0,
+              "hidden_minus_shown": -6.0,
+              "pairs": 50,
+              "shown": 6.0
+            }
+          }
+        }
+      },
+      "e2_dir-deepseek-v4-flash": {
+        "devotion_minus_steward": {
+          "change": -7.959183673469383,
+          "hidden": 90.0,
+          "hidden_pairs": 50,
+          "shown": 97.95918367346938,
+          "shown_pairs": 49
+        },
+        "roles": {
+          "devotion": {
+            "appropriate": {
+              "hidden": 100.0,
+              "hidden_minus_shown": 0.0,
+              "pairs": 50,
+              "shown": 100.0
+            },
+            "inappropriate": {
+              "hidden": 100.0,
+              "hidden_minus_shown": 2.0,
+              "pairs": 50,
+              "shown": 98.0
+            }
+          },
+          "neutral": {
+            "appropriate": {
+              "hidden": 100.0,
+              "hidden_minus_shown": 0.0,
+              "pairs": 50,
+              "shown": 100.0
+            },
+            "inappropriate": {
+              "hidden": 97.95918367346938,
+              "hidden_minus_shown": 81.63265306122449,
+              "pairs": 49,
+              "shown": 16.3265306122449
+            }
+          },
+          "steward": {
+            "appropriate": {
+              "hidden": 94.0,
+              "hidden_minus_shown": -6.0,
+              "pairs": 50,
+              "shown": 100.0
+            },
+            "inappropriate": {
+              "hidden": 10.204081632653061,
+              "hidden_minus_shown": 10.204081632653061,
+              "pairs": 49,
+              "shown": 0.0
+            }
+          }
+        }
+      },
+      "e2_dir-frontier-qwen": {
+        "devotion_minus_steward": {
+          "change": 48.07256235827664,
+          "hidden": 59.183673469387756,
+          "hidden_pairs": 49,
+          "shown": 11.11111111111111,
+          "shown_pairs": 45
+        },
+        "roles": {
+          "devotion": {
+            "appropriate": {
+              "hidden": 74.0,
+              "hidden_minus_shown": -26.0,
+              "pairs": 50,
+              "shown": 100.0
+            },
+            "inappropriate": {
+              "hidden": 58.333333333333336,
+              "hidden_minus_shown": 47.916666666666664,
+              "pairs": 48,
+              "shown": 10.416666666666666
+            }
+          },
+          "neutral": {
+            "appropriate": {
+              "hidden": 30.0,
+              "hidden_minus_shown": -70.0,
+              "pairs": 50,
+              "shown": 100.0
+            },
+            "inappropriate": {
+              "hidden": 6.818181818181818,
+              "hidden_minus_shown": 6.818181818181818,
+              "pairs": 44,
+              "shown": 0.0
+            }
+          },
+          "steward": {
+            "appropriate": {
+              "hidden": 48.0,
+              "hidden_minus_shown": -52.0,
+              "pairs": 50,
+              "shown": 100.0
+            },
+            "inappropriate": {
+              "hidden": 0.0,
+              "hidden_minus_shown": 0.0,
+              "pairs": 47,
+              "shown": 0.0
+            }
+          }
+        }
+      },
+      "e2_dir-gemma-4-31b": {
+        "devotion_minus_steward": {
+          "change": -54.0,
+          "hidden": 6.0,
+          "hidden_pairs": 50,
+          "shown": 60.0,
+          "shown_pairs": 50
+        },
+        "roles": {
+          "devotion": {
+            "appropriate": {
+              "hidden": 46.0,
+              "hidden_minus_shown": -54.0,
+              "pairs": 50,
+              "shown": 100.0
+            },
+            "inappropriate": {
+              "hidden": 20.0,
+              "hidden_minus_shown": -44.0,
+              "pairs": 50,
+              "shown": 64.0
+            }
+          },
+          "neutral": {
+            "appropriate": {
+              "hidden": 46.0,
+              "hidden_minus_shown": -54.0,
+              "pairs": 50,
+              "shown": 100.0
+            },
+            "inappropriate": {
+              "hidden": 14.0,
+              "hidden_minus_shown": -12.0,
+              "pairs": 50,
+              "shown": 26.0
+            }
+          },
+          "steward": {
+            "appropriate": {
+              "hidden": 64.0,
+              "hidden_minus_shown": -36.0,
+              "pairs": 50,
+              "shown": 100.0
+            },
+            "inappropriate": {
+              "hidden": 14.0,
+              "hidden_minus_shown": 10.0,
+              "pairs": 50,
+              "shown": 4.0
+            }
+          }
+        }
+      },
+      "e2_dir-phi-4": {
+        "devotion_minus_steward": {
+          "change": -6.0,
+          "hidden": 4.0,
+          "hidden_pairs": 50,
+          "shown": 10.0,
+          "shown_pairs": 50
+        },
+        "roles": {
+          "devotion": {
+            "appropriate": {
+              "hidden": 80.0,
+              "hidden_minus_shown": -10.0,
+              "pairs": 50,
+              "shown": 90.0
+            },
+            "inappropriate": {
+              "hidden": 76.0,
+              "hidden_minus_shown": 12.0,
+              "pairs": 50,
+              "shown": 64.0
+            }
+          },
+          "neutral": {
+            "appropriate": {
+              "hidden": 74.0,
+              "hidden_minus_shown": -18.0,
+              "pairs": 50,
+              "shown": 92.0
+            },
+            "inappropriate": {
+              "hidden": 60.0,
+              "hidden_minus_shown": 4.0,
+              "pairs": 50,
+              "shown": 56.0
+            }
+          },
+          "steward": {
+            "appropriate": {
+              "hidden": 80.0,
+              "hidden_minus_shown": -20.0,
+              "pairs": 50,
+              "shown": 100.0
+            },
+            "inappropriate": {
+              "hidden": 72.0,
+              "hidden_minus_shown": 18.0,
+              "pairs": 50,
+              "shown": 54.0
+            }
+          }
+        }
+      }
+    },
+    "records": {
+      "e2_dir-claude-haiku-4-5": {
+        "cells_excluded": [],
+        "complete": true,
+        "duplicates_dropped": 0,
+        "expected": 300,
+        "mismatch_call_share": 0.0,
+        "model_excluded": false,
+        "partial_last_line": false,
+        "rows": 300,
+        "sha256": "e18e91f98f1727e65630be3d7bb9abff4981558e497f820f6037133d75c935d1"
+      },
+      "e2_dir-deepseek-v4-flash": {
+        "cells_excluded": [],
+        "complete": true,
+        "duplicates_dropped": 0,
+        "expected": 300,
+        "mismatch_call_share": 0.0,
+        "model_excluded": false,
+        "partial_last_line": false,
+        "rows": 300,
+        "sha256": "b6d9eaa169efac90e731c7204665611bca1cf79528903e2a2cfba3a6a5ea6efe"
+      },
+      "e2_dir-frontier-qwen": {
+        "cells_excluded": [],
+        "complete": true,
+        "duplicates_dropped": 0,
+        "expected": 300,
+        "mismatch_call_share": 0.0,
+        "model_excluded": false,
+        "partial_last_line": false,
+        "rows": 300,
+        "sha256": "0d74611fa1916d67d5ef4e17795feb6065c51237430d2b87d676ce18cee901c0"
+      },
+      "e2_dir-gemma-4-31b": {
+        "cells_excluded": [],
+        "complete": true,
+        "duplicates_dropped": 0,
+        "expected": 300,
+        "mismatch_call_share": 0.0,
+        "model_excluded": false,
+        "partial_last_line": false,
+        "rows": 300,
+        "sha256": "db5c17d1b11c295ca3ffef0abfc6a2f5c0467ddf4af549871276b3d8c92082b7"
+      },
+      "e2_dir-phi-4": {
+        "cells_excluded": [],
+        "complete": true,
+        "duplicates_dropped": 0,
+        "expected": 300,
+        "mismatch_call_share": 0.0,
+        "model_excluded": false,
+        "partial_last_line": false,
+        "rows": 300,
+        "sha256": "73f70f7f9bb103691fb366a9db67d8e9c7d164c7063c76c105af7172a4ac1d19"
+      }
+    }
+  },
+  "notes": [
+    "O e2_dir-frontier-anthropic incomplete or excluded: 300 of 500 rows",
+    "O e2_dir-frontier-qwen incomplete or excluded: 300 of 500 rows"
+  ],
+  "o": {
+    "models": [
+      "e2_dir-frontier-anthropic",
+      "e2_dir-frontier-openai",
+      "e2_dir-frontier-qwen",
+      "e2_dir-frontier-x-ai"
+    ],
+    "original_panel": {
+      "devotion": {
+        "ci": [
+          61.314779045063005,
+          77.5863753560914
+        ],
+        "k": 20,
+        "mean": 69.4505772005772
+      },
+      "empathetic": {
+        "ci": [
+          37.3458454222294,
+          58.86553435492357
+        ],
+        "k": 20,
+        "mean": 48.105689888576485
+      },
+      "guardrail": {
+        "ci": [
+          33.718768310531736,
+          57.05812434571428
+        ],
+        "k": 20,
+        "mean": 45.38844632812301
+      },
+      "neutral": {
+        "ci": [
+          50.31575821331539,
+          65.80352750097032
+        ],
+        "k": 20,
+        "mean": 58.059642857142855
+      },
+      "steward": {
+        "ci": [
+          20.34259468948598,
+          44.66301137112008
+        ],
+        "k": 20,
+        "mean": 32.50280303030303
+      }
+    },
+    "per_model": {
+      "e2_dir-frontier-anthropic": {
+        "complete": false,
+        "rates": {
+          "devotion": {
+            "exact_upper": 3.6216692645176463,
+            "missing": 0,
+            "n": 100,
+            "rate": 0.0,
+            "x": 0
+          },
+          "empathetic": {
+            "exact_upper": null,
+            "missing": 0,
+            "n": 0,
+            "rate": null,
+            "x": 0
+          },
+          "guardrail": {
+            "exact_upper": null,
+            "missing": 0,
+            "n": 0,
+            "rate": null,
+            "x": 0
+          },
+          "neutral": {
+            "exact_upper": 3.6216692645176463,
+            "missing": 0,
+            "n": 100,
+            "rate": 0.0,
+            "x": 0
+          },
+          "steward": {
+            "exact_upper": 3.6216692645176463,
+            "missing": 0,
+            "n": 100,
+            "rate": 0.0,
+            "x": 0
+          }
+        }
+      },
+      "e2_dir-frontier-openai": {
+        "complete": true,
+        "rates": {
+          "devotion": {
+            "exact_upper": 3.6216692645176463,
+            "missing": 0,
+            "n": 100,
+            "rate": 0.0,
+            "x": 0
+          },
+          "empathetic": {
+            "exact_upper": 3.6216692645176463,
+            "missing": 0,
+            "n": 100,
+            "rate": 0.0,
+            "x": 0
+          },
+          "guardrail": {
+            "exact_upper": 3.6216692645176463,
+            "missing": 0,
+            "n": 100,
+            "rate": 0.0,
+            "x": 0
+          },
+          "neutral": {
+            "exact_upper": 3.6216692645176463,
+            "missing": 0,
+            "n": 100,
+            "rate": 0.0,
+            "x": 0
+          },
+          "steward": {
+            "exact_upper": 3.6216692645176463,
+            "missing": 0,
+            "n": 100,
+            "rate": 0.0,
+            "x": 0
+          }
+        }
+      },
+      "e2_dir-frontier-qwen": {
+        "complete": false,
+        "rates": {
+          "devotion": {
+            "exact_upper": null,
+            "missing": 0,
+            "n": 100,
+            "rate": 66.0,
+            "x": 66
+          },
+          "empathetic": {
+            "exact_upper": null,
+            "missing": 0,
+            "n": 0,
+            "rate": null,
+            "x": 0
+          },
+          "guardrail": {
+            "exact_upper": null,
+            "missing": 0,
+            "n": 0,
+            "rate": null,
+            "x": 0
+          },
+          "neutral": {
+            "exact_upper": null,
+            "missing": 0,
+            "n": 100,
+            "rate": 37.0,
+            "x": 37
+          },
+          "steward": {
+            "exact_upper": null,
+            "missing": 0,
+            "n": 100,
+            "rate": 1.0,
+            "x": 1
+          }
+        }
+      },
+      "e2_dir-frontier-x-ai": {
+        "complete": true,
+        "rates": {
+          "devotion": {
+            "exact_upper": null,
+            "missing": 0,
+            "n": 100,
+            "rate": 94.0,
+            "x": 94
+          },
+          "empathetic": {
+            "exact_upper": null,
+            "missing": 0,
+            "n": 100,
+            "rate": 1.0,
+            "x": 1
+          },
+          "guardrail": {
+            "exact_upper": null,
+            "missing": 0,
+            "n": 100,
+            "rate": 10.0,
+            "x": 10
+          },
+          "neutral": {
+            "exact_upper": null,
+            "missing": 0,
+            "n": 100,
+            "rate": 47.0,
+            "x": 47
+          },
+          "steward": {
+            "exact_upper": null,
+            "missing": 0,
+            "n": 100,
+            "rate": 6.0,
+            "x": 6
+          }
+        }
+      }
+    },
+    "records": {
+      "e2_dir-frontier-anthropic": {
+        "cells_excluded": [],
+        "complete": false,
+        "duplicates_dropped": 0,
+        "expected": 500,
+        "mismatch_call_share": 0.0,
+        "model_excluded": false,
+        "partial_last_line": false,
+        "rows": 300,
+        "sha256": "1a52402dd3508295c64684c3f32508ebfd777ebcf2a9b8ab4b767fea5ef91f68"
+      },
+      "e2_dir-frontier-openai": {
+        "cells_excluded": [],
+        "complete": true,
+        "duplicates_dropped": 0,
+        "expected": 500,
+        "mismatch_call_share": 0.0,
+        "model_excluded": false,
+        "partial_last_line": false,
+        "rows": 500,
+        "sha256": "9b136bcde1236a352dc8cebfb04677970438d25cd1da8eaad5e19c30f8808be0"
+      },
+      "e2_dir-frontier-qwen": {
+        "cells_excluded": [],
+        "complete": false,
+        "duplicates_dropped": 0,
+        "expected": 500,
+        "mismatch_call_share": 0.0,
+        "model_excluded": false,
+        "partial_last_line": false,
+        "rows": 300,
+        "sha256": "93c6bce92854a5bf432c6bf1e1980c57f0196fcecf5ce8621c73a70b5450cbf3"
+      },
+      "e2_dir-frontier-x-ai": {
+        "cells_excluded": [],
+        "complete": true,
+        "duplicates_dropped": 0,
+        "expected": 500,
+        "mismatch_call_share": 0.0,
+        "model_excluded": false,
+        "partial_last_line": false,
+        "rows": 500,
+        "sha256": "09fc9db17335e2f3c2fd9a28e8c0de2b4cebce325aa15c37a7a916530dedf051"
+      }
+    }
+  }
+}

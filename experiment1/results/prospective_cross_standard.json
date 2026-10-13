@@ -1,0 +1,358 @@
+{
+  "note": "agents PROSPECTIVELY instructed under each standard (rule stated), scored against that standard. Gemma-3 12B is the primary reference (n=100); the frontier panel is descriptive, at smaller n.",
+  "reference_model": "gemma3-12b-qat",
+  "per_standard": {
+    "sickest_first": {
+      "reference": {
+        "steward": {
+          "chr": 25.0,
+          "ci": [
+            17.5,
+            34.3
+          ],
+          "n": 100
+        },
+        "devotion": {
+          "chr": 63.0,
+          "ci": [
+            53.2,
+            71.8
+          ],
+          "n": 100
+        },
+        "gap_pp": 38.0
+      },
+      "per_model": {
+        "gemma3-12b-qat": {
+          "steward": {
+            "chr": 25.0,
+            "ci": [
+              17.5,
+              34.3
+            ],
+            "n": 100
+          },
+          "devotion": {
+            "chr": 63.0,
+            "ci": [
+              53.2,
+              71.8
+            ],
+            "n": 100
+          },
+          "gap_pp": 38.0
+        },
+        "claude-haiku45": {
+          "steward": {
+            "chr": 3.0,
+            "ci": [
+              1.0,
+              8.5
+            ],
+            "n": 100
+          },
+          "devotion": {
+            "chr": 22.0,
+            "ci": [
+              15.0,
+              31.1
+            ],
+            "n": 100
+          },
+          "gap_pp": 19.0
+        },
+        "llama-4-maverick": {
+          "steward": {
+            "chr": 40.0,
+            "ci": [
+              30.9,
+              49.8
+            ],
+            "n": 100
+          },
+          "devotion": {
+            "chr": 45.0,
+            "ci": [
+              35.6,
+              54.8
+            ],
+            "n": 100
+          },
+          "gap_pp": 5.0
+        },
+        "gpt-5.1": {
+          "steward": {
+            "chr": 2.0,
+            "ci": [
+              0.6,
+              7.0
+            ],
+            "n": 100
+          },
+          "devotion": {
+            "chr": 35.0,
+            "ci": [
+              26.4,
+              44.7
+            ],
+            "n": 100
+          },
+          "gap_pp": 33.0
+        },
+        "deepseek-v4-pro": {
+          "steward": {
+            "chr": 0.0,
+            "ci": [
+              0.0,
+              3.7
+            ],
+            "n": 100
+          },
+          "devotion": {
+            "chr": 55.0,
+            "ci": [
+              45.2,
+              64.4
+            ],
+            "n": 100
+          },
+          "gap_pp": 55.0
+        },
+        "deepseek-v4-flash": {
+          "steward": {
+            "chr": 5.0,
+            "ci": [
+              2.2,
+              11.2
+            ],
+            "n": 100
+          },
+          "devotion": {
+            "chr": 33.0,
+            "ci": [
+              24.6,
+              42.7
+            ],
+            "n": 100
+          },
+          "gap_pp": 28.0
+        },
+        "gemini-2.5-flash": {
+          "steward": {
+            "chr": 1.0,
+            "ci": [
+              0.2,
+              5.4
+            ],
+            "n": 100
+          },
+          "devotion": {
+            "chr": 14.0,
+            "ci": [
+              8.5,
+              22.1
+            ],
+            "n": 100
+          },
+          "gap_pp": 13.0
+        }
+      },
+      "frontier_pooled": {
+        "steward": {
+          "chr": 8.5,
+          "ci": [
+            6.5,
+            11.0
+          ],
+          "n": 600
+        },
+        "devotion": {
+          "chr": 34.0,
+          "ci": [
+            30.3,
+            37.9
+          ],
+          "n": 600
+        },
+        "gap_pp": 25.5
+      },
+      "n_models": 7
+    },
+    "lottery": {
+      "reference": {
+        "steward": {
+          "chr": 52.0,
+          "ci": [
+            42.3,
+            61.5
+          ],
+          "n": 100
+        },
+        "devotion": {
+          "chr": 71.0,
+          "ci": [
+            61.5,
+            79.0
+          ],
+          "n": 100
+        },
+        "gap_pp": 19.0
+      },
+      "per_model": {
+        "gemma3-12b-qat": {
+          "steward": {
+            "chr": 52.0,
+            "ci": [
+              42.3,
+              61.5
+            ],
+            "n": 100
+          },
+          "devotion": {
+            "chr": 71.0,
+            "ci": [
+              61.5,
+              79.0
+            ],
+            "n": 100
+          },
+          "gap_pp": 19.0
+        },
+        "gpt-5.1": {
+          "steward": {
+            "chr": 3.0,
+            "ci": [
+              1.0,
+              8.5
+            ],
+            "n": 100
+          },
+          "devotion": {
+            "chr": 83.0,
+            "ci": [
+              74.5,
+              89.1
+            ],
+            "n": 100
+          },
+          "gap_pp": 80.0
+        },
+        "claude-haiku45": {
+          "steward": {
+            "chr": 23.0,
+            "ci": [
+              15.8,
+              32.2
+            ],
+            "n": 100
+          },
+          "devotion": {
+            "chr": 42.0,
+            "ci": [
+              32.8,
+              51.8
+            ],
+            "n": 100
+          },
+          "gap_pp": 19.0
+        },
+        "llama-4-maverick": {
+          "steward": {
+            "chr": 57.0,
+            "ci": [
+              47.2,
+              66.3
+            ],
+            "n": 100
+          },
+          "devotion": {
+            "chr": 65.0,
+            "ci": [
+              55.3,
+              73.6
+            ],
+            "n": 100
+          },
+          "gap_pp": 8.0
+        },
+        "deepseek-v4-flash": {
+          "steward": {
+            "chr": 25.0,
+            "ci": [
+              17.5,
+              34.3
+            ],
+            "n": 100
+          },
+          "devotion": {
+            "chr": 79.0,
+            "ci": [
+              70.0,
+              85.8
+            ],
+            "n": 100
+          },
+          "gap_pp": 54.0
+        },
+        "deepseek-v4-pro": {
+          "steward": {
+            "chr": 65.0,
+            "ci": [
+              55.3,
+              73.6
+            ],
+            "n": 100
+          },
+          "devotion": {
+            "chr": 89.0,
+            "ci": [
+              81.4,
+              93.7
+            ],
+            "n": 100
+          },
+          "gap_pp": 24.0
+        },
+        "gemini-2.5-flash": {
+          "steward": {
+            "chr": 19.0,
+            "ci": [
+              12.5,
+              27.8
+            ],
+            "n": 100
+          },
+          "devotion": {
+            "chr": 46.0,
+            "ci": [
+              36.6,
+              55.7
+            ],
+            "n": 100
+          },
+          "gap_pp": 27.0
+        }
+      },
+      "frontier_pooled": {
+        "steward": {
+          "chr": 32.0,
+          "ci": [
+            28.4,
+            35.8
+          ],
+          "n": 600
+        },
+        "devotion": {
+          "chr": 67.3,
+          "ci": [
+            63.5,
+            71.0
+          ],
+          "n": 600
+        },
+        "gap_pp": 35.3
+      },
+      "n_models": 7
+    }
+  }
+}

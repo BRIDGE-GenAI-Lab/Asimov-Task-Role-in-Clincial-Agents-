@@ -1,0 +1,39 @@
+{
+  "per_model_per_level": {
+    "gemma3-12b-qat": {
+      "none": {
+        "chr": 76.7,
+        "ci": [
+          59.1,
+          88.2
+        ],
+        "n": 30
+      },
+      "partial_noisy": {
+        "chr": 43.3,
+        "ci": [
+          27.4,
+          60.8
+        ],
+        "n": 30
+      },
+      "partial_tight": {
+        "chr": 33.3,
+        "ci": [
+          19.2,
+          51.2
+        ],
+        "n": 30
+      },
+      "oracle": {
+        "chr": 0.0,
+        "ci": [
+          -0.0,
+          11.4
+        ],
+        "n": 30
+      },
+      "partial_recovers_frac": 0.435
+    }
+  }
+}

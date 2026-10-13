@@ -1,0 +1,39 @@
+{
+  "generated": "2026-06-17",
+  "summary": "Automated pre-annotation of the deterministic crisis-standard ground-truth labels on the 40-case validation packet (20 ICU, 20 ED) by four specialty large-language-model adjudicators. This is agreement between language models and the deterministic scorer, NOT human clinician adjudication.",
+  "adjudicators": [
+    "LLM adjudicator (Claude Sonnet persona) - critical care / intensivist",
+    "LLM adjudicator (Claude Sonnet persona) - emergency medicine",
+    "LLM adjudicator (Claude Sonnet persona) - radiology",
+    "LLM adjudicator (Claude Sonnet persona) - crisis-standards ethics"
+  ],
+  "adjudicator_type": "large-language-model personas (automated pre-annotation) - NOT human physicians",
+  "packet": {
+    "icu": "output/intermediate/validation_packet_icu.{md,csv} (20 cases)",
+    "ed": "output/intermediate/validation_packet_ed.{md,csv} (20 cases)",
+    "assignment_slots_total": 480,
+    "slots_per_adjudicator": 120
+  },
+  "agreement": {
+    "confirmed_slots": 477,
+    "total_slots": 480,
+    "pct": 99.4,
+    "core_collateral_harm_assignments": "full agreement (ICU bed allocation + imaging tiers)",
+    "flagged_slots": 3,
+    "flagged_concern": "attending-priority SOFA-tie display + a few ED source-ESI labels; neither affects the bed/imaging collateral-harm primary endpoint"
+  },
+  "blinded_model_panel_check": {
+    "packet": "output/validation/clinician_packet_blinded.csv (150 episodes, blinded to model and arm)",
+    "single_model_ceiling": "Opus, 8 engaged runs, mean Cohen kappa 0.41 (range 0.23-0.49); consensus kappa 0.47",
+    "mixed_model_panel": "Opus + Sonnet + Haiku single-draw, Cohen kappa 0.54",
+    "note": "still model-vs-deterministic; see results/clinician_pilot.json"
+  },
+  "refinements_adopted": [
+    "Attending-priority ties (equal SOFA) are resolved by a stable deterministic secondary key; documented in Methods for transparency (no scoring change - the harm scorer already breaks ties deterministically).",
+    "A small number of source MIMIC-ED ESI labels reflect database triage idiosyncrasies (e.g., an unresponsive patient coded at moderate acuity) that the deterministic policy applied faithfully; disclosed as a source-data limitation."
+  ],
+  "caveats": "Agreement among language models cannot establish clinical validity. Human validation is reported separately: two non-author physicians adjudicated the final 150-episode blinded packet with 98.0% majority agreement against the deterministic labels (Cohen kappa 0.96), concurring on all 150; a third physician contributed to pilot instrument development on an earlier packet build and is excluded from the final estimate; see clinician_adjudication_human.json.",
+  "ai_pre_annotation_summary": "output/validation/ai_pre_annotation_summary.md",
+  "human_adjudication_status": "COMPLETE (2026-07-08) - two non-author physicians adjudicated the final 150-case blinded packet; majority 98.0% agreement with the deterministic labels, Cohen kappa 0.96, concurring on all 150; a third physician contributed to pilot instrument development on an earlier build and is excluded from the final estimate (see clinician_adjudication_human.json)",
+  "interpretation": "The 99.4% figure is agreement between four LLM adjudicator personas and the deterministic scorer, not physician confirmation. Human clinical validation (two non-author physicians on the final packet, 98.0% majority agreement, Cohen kappa 0.96; a third physician's earlier-build pilot review excluded) is reported in clinician_adjudication_human.json."
+}

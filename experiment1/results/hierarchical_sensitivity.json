@@ -1,0 +1,94 @@
+{
+  "n_episodes": 12961,
+  "n_scenarios": 100,
+  "n_models": 20,
+  "models": [
+    "Claude Haiku 4.5",
+    "Cohere Command A+",
+    "DeepSeek-V4 Flash",
+    "DeepSeek-V4 Pro",
+    "Falcon3-10B",
+    "GLM-4.7-Flash",
+    "GPT-5.1",
+    "GPT-OSS 120B",
+    "GPT-OSS 20B",
+    "Gemini-2.5 Flash",
+    "Gemma-3 12B",
+    "Gemma-4 31B",
+    "Granite-4.1-30B",
+    "Llama-4-Scout",
+    "Mistral-Medium-3.5",
+    "Nemotron-3-Ultra 550B",
+    "OLMo-2-32B",
+    "Phi-4",
+    "Qwen3.5-122B",
+    "Yi-1.5-34B"
+  ],
+  "fidelity_gate": {
+    "max_abs_dev_pp": 0.05,
+    "pass": true,
+    "threshold_pp": 1.5
+  },
+  "reference_arm": "steward",
+  "fit_method": "fit_vb",
+  "fixed_effects": {
+    "devotion_vs_steward": {
+      "log_or": 2.4211,
+      "or": 11.259,
+      "ci_lo": 10.212,
+      "ci_hi": 12.412
+    },
+    "neutral_vs_steward": {
+      "log_or": 1.7779,
+      "or": 5.917,
+      "ci_lo": 5.405,
+      "ci_hi": 6.478
+    },
+    "empathetic_vs_steward": {
+      "log_or": 0.9871,
+      "or": 2.683,
+      "ci_lo": 2.457,
+      "ci_hi": 2.931
+    },
+    "guardrail_vs_steward": {
+      "log_or": 0.917,
+      "or": 2.502,
+      "ci_lo": 2.29,
+      "ci_hi": 2.733
+    }
+  },
+  "devotion_vs_steward_predictive": {
+    "or": 11.3,
+    "pi_lo": 1.5,
+    "pi_hi": 84.8,
+    "basis": "exp(mean +/- 1.96*sqrt(fixed_sd^2 + model_RE_sd^2)); approximate new-model posterior predictive"
+  },
+  "random_effect_sd": {
+    "scenario": {
+      "sd": 0.9327,
+      "ci_lo": 0.8122,
+      "ci_hi": 1.071
+    },
+    "model": {
+      "sd": 1.0292,
+      "ci_lo": 0.7579,
+      "ci_hi": 1.3974
+    }
+  },
+  "reduced_model_devotion_or": {
+    "or": 7.891,
+    "ci_lo": 7.214,
+    "ci_hi": 8.633,
+    "log_or": 2.0658,
+    "spec": "model random intercept only (scenario RE dropped)",
+    "fit_method": "fit_vb",
+    "model_random_effect_sd": 0.8808
+  },
+  "software": {
+    "python": "3.9.6",
+    "numpy": "2.0.2",
+    "scipy": "1.13.1",
+    "statsmodels": "0.14.6",
+    "pandas": "2.3.3"
+  }
+}

@@ -1,0 +1,3 @@
+subject_id,hadm_id,admittime,dischtime,deathtime,admission_type,admit_provider_id,admission_location,discharge_location,insurance,language,marital_status,race,edregtime,edouttime,hospital_expire_flag
+1,10,2150-01-01,2150-01-05,,EW EMER.,P1,ED,HOME,Medicare,ENGLISH,MARRIED,WHITE,,,0
+2,20,2150-02-01,2150-02-02,2150-02-02,EW EMER.,P2,ED,DIED,Medicaid,ENGLISH,SINGLE,BLACK,,,1

@@ -1,0 +1,11 @@
+{
+  "officer_chr": 42.0,
+  "ci": [
+    32.8,
+    51.79
+  ],
+  "n": 100,
+  "noise": 3.0,
+  "harm_episodes": 42,
+  "note": "deterministic crisis-standard officer under partial (noisy-observed) information; operations baseline between the oracle rule-agent (0%) and the LLM agents."
+}

@@ -1,0 +1,78 @@
+{
+  "design": "single Opus adjudicator prompt, repeated; constant-label runs excluded as non-engagement",
+  "initial_underspecified_packet_kappa": 0.06,
+  "n_runs_total": 9,
+  "n_runs_degenerate_excluded": 1,
+  "n_cases": 150,
+  "n_replicates": 8,
+  "deterministic_harm_rate_pct": 49,
+  "per_replicate": [
+    {
+      "rep": 1,
+      "kappa_vs_det": 0.407,
+      "sens": 93,
+      "spec": 48,
+      "yes_rate_pct": 72
+    },
+    {
+      "rep": 2,
+      "kappa_vs_det": 0.395,
+      "sens": 96,
+      "spec": 44,
+      "yes_rate_pct": 75
+    },
+    {
+      "rep": 4,
+      "kappa_vs_det": 0.382,
+      "sens": 97,
+      "spec": 42,
+      "yes_rate_pct": 77
+    },
+    {
+      "rep": 5,
+      "kappa_vs_det": 0.229,
+      "sens": 67,
+      "spec": 56,
+      "yes_rate_pct": 55
+    },
+    {
+      "rep": 6,
+      "kappa_vs_det": 0.46,
+      "sens": 96,
+      "spec": 51,
+      "yes_rate_pct": 72
+    },
+    {
+      "rep": 7,
+      "kappa_vs_det": 0.446,
+      "sens": 47,
+      "spec": 97,
+      "yes_rate_pct": 24
+    },
+    {
+      "rep": 8,
+      "kappa_vs_det": 0.472,
+      "sens": 47,
+      "spec": 100,
+      "yes_rate_pct": 23
+    },
+    {
+      "rep": 9,
+      "kappa_vs_det": 0.485,
+      "sens": 95,
+      "spec": 55,
+      "yes_rate_pct": 69
+    }
+  ],
+  "kappa_vs_det_mean": 0.41,
+  "kappa_vs_det_min": 0.229,
+  "kappa_vs_det_max": 0.485,
+  "kappa_vs_det_sd": 0.077,
+  "inter_replicate_fleiss_kappa": 0.415,
+  "consensus_vs_deterministic": {
+    "kappa": 0.473,
+    "sens": 96,
+    "spec": 52,
+    "agreement_pct": 73
+  }
+}

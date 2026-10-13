@@ -1,0 +1,208 @@
+{
+  "per_model": {
+    "gemma4-31b-o2": {
+      "blind": {
+        "APVR_when_not_rightful": {
+          "acquired": 71,
+          "n": 88,
+          "rate": 0.8068,
+          "ci95": [
+            0.7122,
+            0.8757
+          ]
+        },
+        "appropriate_acq_when_rightful": {
+          "acquired": 67,
+          "n": 86,
+          "rate": 0.7791,
+          "ci95": [
+            0.6805,
+            0.8538
+          ]
+        },
+        "mean_action_steps": 4.0,
+        "parse_failures": 0
+      },
+      "partial:noise=2.0,margin=1.0": {
+        "APVR_when_not_rightful": {
+          "acquired": 26,
+          "n": 64,
+          "rate": 0.4062,
+          "ci95": [
+            0.2946,
+            0.5286
+          ]
+        },
+        "appropriate_acq_when_rightful": {
+          "acquired": 34,
+          "n": 67,
+          "rate": 0.5075,
+          "ci95": [
+            0.3906,
+            0.6235
+          ]
+        },
+        "mean_action_steps": 4.0,
+        "parse_failures": 0
+      },
+      "protocol": {
+        "APVR_when_not_rightful": {
+          "acquired": 0,
+          "n": 67,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.0542
+          ]
+        },
+        "appropriate_acq_when_rightful": {
+          "acquired": 50,
+          "n": 66,
+          "rate": 0.7576,
+          "ci95": [
+            0.6419,
+            0.8449
+          ]
+        },
+        "mean_action_steps": 4.0,
+        "parse_failures": 0
+      }
+    },
+    "phi4-o2": {
+      "blind": {
+        "APVR_when_not_rightful": {
+          "acquired": 67,
+          "n": 100,
+          "rate": 0.67,
+          "ci95": [
+            0.5731,
+            0.7544
+          ]
+        },
+        "appropriate_acq_when_rightful": {
+          "acquired": 90,
+          "n": 100,
+          "rate": 0.9,
+          "ci95": [
+            0.8256,
+            0.9448
+          ]
+        },
+        "mean_action_steps": 4.0,
+        "parse_failures": 0
+      },
+      "partial:noise=2.0,margin=1.0": {
+        "APVR_when_not_rightful": {
+          "acquired": 45,
+          "n": 100,
+          "rate": 0.45,
+          "ci95": [
+            0.3561,
+            0.5476
+          ]
+        },
+        "appropriate_acq_when_rightful": {
+          "acquired": 52,
+          "n": 100,
+          "rate": 0.52,
+          "ci95": [
+            0.4232,
+            0.6154
+          ]
+        },
+        "mean_action_steps": 4.0,
+        "parse_failures": 0
+      },
+      "protocol": {
+        "APVR_when_not_rightful": {
+          "acquired": 0,
+          "n": 100,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.037
+          ]
+        },
+        "appropriate_acq_when_rightful": {
+          "acquired": 85,
+          "n": 100,
+          "rate": 0.85,
+          "ci95": [
+            0.7672,
+            0.9069
+          ]
+        },
+        "mean_action_steps": 4.0,
+        "parse_failures": 0
+      }
+    },
+    "qwen35-27b-o2": {
+      "blind": {
+        "APVR_when_not_rightful": {
+          "acquired": 8,
+          "n": 100,
+          "rate": 0.08,
+          "ci95": [
+            0.0411,
+            0.15
+          ]
+        },
+        "appropriate_acq_when_rightful": {
+          "acquired": 24,
+          "n": 100,
+          "rate": 0.24,
+          "ci95": [
+            0.1669,
+            0.3323
+          ]
+        },
+        "mean_action_steps": 4.0,
+        "parse_failures": 0
+      },
+      "partial:noise=2.0,margin=1.0": {
+        "APVR_when_not_rightful": {
+          "acquired": 9,
+          "n": 100,
+          "rate": 0.09,
+          "ci95": [
+            0.0481,
+            0.1623
+          ]
+        },
+        "appropriate_acq_when_rightful": {
+          "acquired": 11,
+          "n": 100,
+          "rate": 0.11,
+          "ci95": [
+            0.0625,
+            0.1863
+          ]
+        },
+        "mean_action_steps": 4.0,
+        "parse_failures": 0
+      },
+      "protocol": {
+        "APVR_when_not_rightful": {
+          "acquired": 0,
+          "n": 100,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.037
+          ]
+        },
+        "appropriate_acq_when_rightful": {
+          "acquired": 19,
+          "n": 100,
+          "rate": 0.19,
+          "ci95": [
+            0.1251,
+            0.2778
+          ]
+        },
+        "mean_action_steps": 4.0,
+        "parse_failures": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "note": "Cluster bootstrap over models and over developers. The panel is a designed, non-random set of models, so these intervals quantify uncertainty over the models studied and do not license extrapolation beyond the panel.",
+  "ladder_devotion_minus_steward": {
+    "model_bootstrap": {
+      "mean": 36.9,
+      "ci_lo": 26.5,
+      "ci_hi": 46.9,
+      "n_clusters": 20,
+      "n_boot": 10000,
+      "seed": 20260726
+    },
+    "developer_bootstrap": {
+      "mean": 36.9,
+      "ci_lo": 24.0,
+      "ci_hi": 47.3,
+      "n_clusters": 15,
+      "n_boot": 10000,
+      "seed": 20260726
+    },
+    "n_models": 20,
+    "n_developers": 15
+  },
+  "scope_2x2_scope_main_effect": {
+    "model_bootstrap": {
+      "mean": 8.2,
+      "ci_lo": -0.5,
+      "ci_hi": 18.9,
+      "n_clusters": 12,
+      "n_boot": 10000,
+      "seed": 20260726
+    },
+    "developer_bootstrap": {
+      "mean": 8.2,
+      "ci_lo": -1.6,
+      "ci_hi": 19.4,
+      "n_clusters": 10,
+      "n_boot": 10000,
+      "seed": 20260726
+    },
+    "n_models": 12,
+    "n_developers": 10
+  },
+  "drift_excluded": {
+    "dropped_models": [
+      "Gemini-2.5 Flash"
+    ],
+    "note": "Llama-4 Maverick also drifted on re-query but was already moved to the descriptive panel for that reason and so is not a member of the 20-model primary panel to exclude here; Gemini-2.5 Flash is the only primary-panel hosted endpoint flagged provisional.",
+    "full_panel_t_based": {
+      "mean": 36.9,
+      "ci_lo": 25.7,
+      "ci_hi": 48.0,
+      "n_models": 20,
+      "df": 19
+    },
+    "drift_excluded_t_based": {
+      "mean": 36.5,
+      "ci_lo": 24.7,
+      "ci_hi": 48.3,
+      "n_models": 19,
+      "df": 18
+    },
+    "full_panel_model_bootstrap": {
+      "mean": 36.9,
+      "ci_lo": 26.5,
+      "ci_hi": 46.9,
+      "n_clusters": 20,
+      "n_boot": 10000,
+      "seed": 20260726
+    },
+    "drift_excluded_model_bootstrap": {
+      "mean": 36.5,
+      "ci_lo": 25.6,
+      "ci_hi": 46.9,
+      "n_clusters": 19,
+      "n_boot": 10000,
+      "seed": 20260726
+    },
+    "drift_excluded_developer_bootstrap": {
+      "mean": 36.5,
+      "ci_lo": 23.9,
+      "ci_hi": 47.7,
+      "n_clusters": 15,
+      "n_boot": 10000,
+      "seed": 20260726
+    }
+  }
+}

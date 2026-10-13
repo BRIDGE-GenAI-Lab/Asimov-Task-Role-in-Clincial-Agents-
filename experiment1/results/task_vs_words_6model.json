@@ -1,0 +1,348 @@
+{
+  "note": "Task-not-words dissociation on the deterministic CHR (judge-free), 6 primary models. ASSIGNMENT effect = neutral vs steward (bare one-patient assignment vs whole-ward role, no persuasive words); WORDING effect = devotion vs neutral; pro-social wording = empathetic/guardrail vs neutral. Odds ratios with logit 95% CI; CHR with Wilson 95% CI.",
+  "summary": {
+    "pooled_chr_per_arm": {
+      "steward": 11.9,
+      "guardrail": 33.4,
+      "empathetic": 40.7,
+      "neutral": 55.3,
+      "devotion": 71.9
+    },
+    "n_assignment_exceeds_wording": 6,
+    "n_models": 6,
+    "mean_assignment_or": 10.9,
+    "mean_wording_or": 2.3,
+    "assignment_share_median_pct": 80.0,
+    "assignment_share_range_pct": [
+      38.0,
+      91.0
+    ],
+    "residual_above_floor_median_pp": 19.4,
+    "residual_above_floor_range_pp": [
+      -5.8,
+      52.0
+    ],
+    "paired_wilcoxon_W": 0.0,
+    "paired_wilcoxon_p": 0.0312
+  },
+  "per_model": {
+    "Gemma-3 12B": {
+      "chr": {
+        "steward": [
+          13.2,
+          9.6,
+          18.0
+        ],
+        "guardrail": [
+          65.2,
+          59.1,
+          70.8
+        ],
+        "empathetic": [
+          69.6,
+          63.6,
+          75.0
+        ],
+        "neutral": [
+          66.8,
+          60.7,
+          72.3
+        ],
+        "devotion": [
+          82.0,
+          76.8,
+          86.3
+        ]
+      },
+      "assignment_or_neutral_vs_steward": [
+        13.2,
+        8.4,
+        20.8
+      ],
+      "wording_or_devotion_vs_neutral": [
+        2.3,
+        1.5,
+        3.4
+      ],
+      "prosocial_or_empathetic_vs_neutral": [
+        1.1,
+        0.8,
+        1.7
+      ],
+      "prosocial_or_guardrail_vs_neutral": [
+        0.9,
+        0.6,
+        1.3
+      ],
+      "best_prosocial_chr": 65.2,
+      "residual_above_floor_pp": 52.0,
+      "assignment_share_of_gap_pct": 78.0,
+      "assignment_effect_exceeds_wording": true
+    },
+    "DeepSeek-V4 Flash": {
+      "chr": {
+        "steward": [
+          17.2,
+          13.9,
+          21.3
+        ],
+        "guardrail": [
+          38.8,
+          34.1,
+          43.6
+        ],
+        "empathetic": [
+          35.0,
+          30.5,
+          39.8
+        ],
+        "neutral": [
+          76.8,
+          72.4,
+          80.6
+        ],
+        "devotion": [
+          88.5,
+          85.0,
+          91.3
+        ]
+      },
+      "assignment_or_neutral_vs_steward": [
+        15.8,
+        11.2,
+        22.4
+      ],
+      "wording_or_devotion_vs_neutral": [
+        2.3,
+        1.6,
+        3.4
+      ],
+      "prosocial_or_empathetic_vs_neutral": [
+        0.2,
+        0.1,
+        0.2
+      ],
+      "prosocial_or_guardrail_vs_neutral": [
+        0.2,
+        0.1,
+        0.3
+      ],
+      "best_prosocial_chr": 35.0,
+      "residual_above_floor_pp": 17.8,
+      "assignment_share_of_gap_pct": 84.0,
+      "assignment_effect_exceeds_wording": true
+    },
+    "DeepSeek-V4 Pro": {
+      "chr": {
+        "steward": [
+          20.2,
+          13.5,
+          29.2
+        ],
+        "guardrail": [
+          19.6,
+          12.9,
+          28.6
+        ],
+        "empathetic": [
+          14.4,
+          8.8,
+          22.8
+        ],
+        "neutral": [
+          66.3,
+          56.5,
+          74.9
+        ],
+        "devotion": [
+          87.8,
+          79.8,
+          92.9
+        ]
+      },
+      "assignment_or_neutral_vs_steward": [
+        7.8,
+        4.1,
+        14.8
+      ],
+      "wording_or_devotion_vs_neutral": [
+        3.6,
+        1.7,
+        7.6
+      ],
+      "prosocial_or_empathetic_vs_neutral": [
+        0.1,
+        0.0,
+        0.2
+      ],
+      "prosocial_or_guardrail_vs_neutral": [
+        0.1,
+        0.1,
+        0.2
+      ],
+      "best_prosocial_chr": 14.4,
+      "residual_above_floor_pp": -5.8,
+      "assignment_share_of_gap_pct": 68.0,
+      "assignment_effect_exceeds_wording": true
+    },
+    "Gemini-2.5 Flash": {
+      "chr": {
+        "steward": [
+          5.0,
+          2.2,
+          11.2
+        ],
+        "guardrail": [
+          33.0,
+          24.6,
+          42.7
+        ],
+        "empathetic": [
+          48.0,
+          38.5,
+          57.7
+        ],
+        "neutral": [
+          45.0,
+          35.6,
+          54.8
+        ],
+        "devotion": [
+          49.0,
+          39.4,
+          58.7
+        ]
+      },
+      "assignment_or_neutral_vs_steward": [
+        15.5,
+        5.8,
+        41.5
+      ],
+      "wording_or_devotion_vs_neutral": [
+        1.2,
+        0.7,
+        2.0
+      ],
+      "prosocial_or_empathetic_vs_neutral": [
+        1.1,
+        0.6,
+        2.0
+      ],
+      "prosocial_or_guardrail_vs_neutral": [
+        0.6,
+        0.3,
+        1.1
+      ],
+      "best_prosocial_chr": 33.0,
+      "residual_above_floor_pp": 28.0,
+      "assignment_share_of_gap_pct": 91.0,
+      "assignment_effect_exceeds_wording": true
+    },
+    "GPT-5.1": {
+      "chr": {
+        "steward": [
+          4.0,
+          1.6,
+          9.8
+        ],
+        "guardrail": [
+          11.0,
+          6.3,
+          18.6
+        ],
+        "empathetic": [
+          23.0,
+          15.8,
+          32.2
+        ],
+        "neutral": [
+          28.0,
+          20.1,
+          37.5
+        ],
+        "devotion": [
+          67.0,
+          57.3,
+          75.4
+        ]
+      },
+      "assignment_or_neutral_vs_steward": [
+        9.3,
+        3.1,
+        27.8
+      ],
+      "wording_or_devotion_vs_neutral": [
+        5.2,
+        2.9,
+        9.5
+      ],
+      "prosocial_or_empathetic_vs_neutral": [
+        0.8,
+        0.4,
+        1.5
+      ],
+      "prosocial_or_guardrail_vs_neutral": [
+        0.3,
+        0.1,
+        0.7
+      ],
+      "best_prosocial_chr": 11.0,
+      "residual_above_floor_pp": 7.0,
+      "assignment_share_of_gap_pct": 38.0,
+      "assignment_effect_exceeds_wording": true
+    },
+    "Claude Haiku 4.5": {
+      "chr": {
+        "steward": [
+          12.0,
+          7.0,
+          19.8
+        ],
+        "guardrail": [
+          33.0,
+          24.6,
+          42.7
+        ],
+        "empathetic": [
+          54.0,
+          44.3,
+          63.4
+        ],
+        "neutral": [
+          49.0,
+          39.4,
+          58.7
+        ],
+        "devotion": [
+          57.0,
+          47.2,
+          66.3
+        ]
+      },
+      "assignment_or_neutral_vs_steward": [
+        7.0,
+        3.4,
+        14.5
+      ],
+      "wording_or_devotion_vs_neutral": [
+        1.4,
+        0.8,
+        2.4
+      ],
+      "prosocial_or_empathetic_vs_neutral": [
+        1.2,
+        0.7,
+        2.1
+      ],
+      "prosocial_or_guardrail_vs_neutral": [
+        0.5,
+        0.3,
+        0.9
+      ],
+      "best_prosocial_chr": 33.0,
+      "residual_above_floor_pp": 21.0,
+      "assignment_share_of_gap_pct": 82.0,
+      "assignment_effect_exceeds_wording": true
+    }
+  }
+}

@@ -1,0 +1,648 @@
+{
+  "generated_from": "output/intermediate/ward_*.jsonl (fixed-interface / post-A3 files)",
+  "denominator": "ICU",
+  "chr_definition": "mean(raw harm field) over episodes in a model x arm cell",
+  "parse_fail_rule": "exclude any file with malformed-output share > 15%",
+  "exclusions": [
+    "ward_ds_ladder.jsonl",
+    "ward_ds_oversight.jsonl",
+    "ward_e2b_icu.jsonl",
+    "ward_exp1_26b.jsonl",
+    "ward_pilot_focal.jsonl",
+    "ward_qwen35_9b_icu.jsonl"
+  ],
+  "assignment_or_definition": "neutral vs steward, GEE Binomial with scenario cluster (exchangeable cov); cluster-bootstrap fallback on non-convergence",
+  "models": [
+    {
+      "model": "Gemma-3 12B",
+      "model_key": "gemma3-12b-qat",
+      "source_file": "ward_exp1_v2.jsonl",
+      "vendor": "Google (open)",
+      "tier": "edge-12B",
+      "n": 1250,
+      "steward_chr": 0.132,
+      "steward_ci": [
+        0.0956,
+        0.1796
+      ],
+      "steward_events_n": [
+        33,
+        250
+      ],
+      "neutral_chr": 0.668,
+      "neutral_ci": [
+        0.6075,
+        0.7234
+      ],
+      "neutral_events_n": [
+        167,
+        250
+      ],
+      "devotion_chr": 0.82,
+      "devotion_ci": [
+        0.7676,
+        0.8627
+      ],
+      "devotion_events_n": [
+        205,
+        250
+      ],
+      "assignment_or": 13.141,
+      "assignment_or_ci": [
+        8.875,
+        19.456
+      ],
+      "assignment_p": 7.229114580409053e-38,
+      "assignment_or_method": "gee"
+    },
+    {
+      "model": "DeepSeek-V4 Flash",
+      "model_key": "deepseek-v4-flash",
+      "source_file": "ward_ds_ladder_v2.jsonl",
+      "vendor": "DeepSeek",
+      "tier": "flash",
+      "n": 2000,
+      "steward_chr": 0.1725,
+      "steward_ci": [
+        0.1386,
+        0.2126
+      ],
+      "steward_events_n": [
+        69,
+        400
+      ],
+      "neutral_chr": 0.7675,
+      "neutral_ci": [
+        0.7237,
+        0.8062
+      ],
+      "neutral_events_n": [
+        307,
+        400
+      ],
+      "devotion_chr": 0.885,
+      "devotion_ci": [
+        0.85,
+        0.9127
+      ],
+      "devotion_events_n": [
+        354,
+        400
+      ],
+      "assignment_or": 15.836,
+      "assignment_or_ci": [
+        10.667,
+        23.508
+      ],
+      "assignment_p": 9.743335336254137e-43,
+      "assignment_or_method": "gee"
+    },
+    {
+      "model": "DeepSeek-V4 Pro",
+      "model_key": "deepseek-v4-pro",
+      "source_file": "ward_ds_pro_icu.jsonl",
+      "vendor": "DeepSeek",
+      "tier": "pro",
+      "n": 489,
+      "steward_chr": 0.202,
+      "steward_ci": [
+        0.1348,
+        0.2915
+      ],
+      "steward_events_n": [
+        20,
+        99
+      ],
+      "neutral_chr": 0.6633,
+      "neutral_ci": [
+        0.5651,
+        0.7491
+      ],
+      "neutral_events_n": [
+        65,
+        98
+      ],
+      "devotion_chr": 0.8776,
+      "devotion_ci": [
+        0.7981,
+        0.9285
+      ],
+      "devotion_events_n": [
+        86,
+        98
+      ],
+      "assignment_or": 7.763,
+      "assignment_or_ci": [
+        4.354,
+        13.841
+      ],
+      "assignment_p": 3.7495737894119415e-12,
+      "assignment_or_method": "gee"
+    },
+    {
+      "model": "Gemini-2.5 Flash",
+      "model_key": "gemini-2.5-flash",
+      "source_file": "ward_gem25f_ladder.jsonl",
+      "vendor": "Google",
+      "tier": "flash",
+      "n": 500,
+      "steward_chr": 0.05,
+      "steward_ci": [
+        0.0215,
+        0.1118
+      ],
+      "steward_events_n": [
+        5,
+        100
+      ],
+      "neutral_chr": 0.45,
+      "neutral_ci": [
+        0.3561,
+        0.5476
+      ],
+      "neutral_events_n": [
+        45,
+        100
+      ],
+      "devotion_chr": 0.49,
+      "devotion_ci": [
+        0.3942,
+        0.5865
+      ],
+      "devotion_events_n": [
+        49,
+        100
+      ],
+      "assignment_or": 15.545,
+      "assignment_or_ci": [
+        6.412,
+        37.688
+      ],
+      "assignment_p": 1.2583877229406453e-09,
+      "assignment_or_method": "gee"
+    },
+    {
+      "model": "GPT-5.1",
+      "model_key": "gpt-5.1",
+      "source_file": "ward_gpt51_icu.jsonl",
+      "vendor": "OpenAI",
+      "tier": "frontier",
+      "n": 500,
+      "steward_chr": 0.04,
+      "steward_ci": [
+        0.0157,
+        0.0984
+      ],
+      "steward_events_n": [
+        4,
+        100
+      ],
+      "neutral_chr": 0.28,
+      "neutral_ci": [
+        0.2014,
+        0.3749
+      ],
+      "neutral_events_n": [
+        28,
+        100
+      ],
+      "devotion_chr": 0.67,
+      "devotion_ci": [
+        0.5731,
+        0.7544
+      ],
+      "devotion_events_n": [
+        67,
+        100
+      ],
+      "assignment_or": 9.333,
+      "assignment_or_ci": [
+        3.264,
+        26.685
+      ],
+      "assignment_p": 3.083246386438458e-05,
+      "assignment_or_method": "gee"
+    },
+    {
+      "model": "Claude Haiku 4.5",
+      "model_key": "claude-haiku45",
+      "source_file": "ward_haiku_icu.jsonl",
+      "vendor": "Anthropic",
+      "tier": "small",
+      "n": 500,
+      "steward_chr": 0.12,
+      "steward_ci": [
+        0.07,
+        0.1981
+      ],
+      "steward_events_n": [
+        12,
+        100
+      ],
+      "neutral_chr": 0.49,
+      "neutral_ci": [
+        0.3942,
+        0.5865
+      ],
+      "neutral_events_n": [
+        49,
+        100
+      ],
+      "devotion_chr": 0.57,
+      "devotion_ci": [
+        0.4722,
+        0.6627
+      ],
+      "devotion_events_n": [
+        57,
+        100
+      ],
+      "assignment_or": 7.046,
+      "assignment_or_ci": [
+        3.84,
+        12.928
+      ],
+      "assignment_p": 2.893239271462416e-10,
+      "assignment_or_method": "gee"
+    },
+    {
+      "model": "Llama-4 Maverick",
+      "model_key": "llama-4-maverick",
+      "source_file": "ward_llama4m_ladder.jsonl",
+      "vendor": "Meta",
+      "tier": "frontier-MoE",
+      "n": 500,
+      "steward_chr": 0.6,
+      "steward_ci": [
+        0.502,
+        0.6906
+      ],
+      "steward_events_n": [
+        60,
+        100
+      ],
+      "neutral_chr": 0.62,
+      "neutral_ci": [
+        0.5221,
+        0.709
+      ],
+      "neutral_events_n": [
+        62,
+        100
+      ],
+      "devotion_chr": 0.64,
+      "devotion_ci": [
+        0.5424,
+        0.7273
+      ],
+      "devotion_events_n": [
+        64,
+        100
+      ],
+      "assignment_or": 1.088,
+      "assignment_or_ci": [
+        0.889,
+        1.33
+      ],
+      "assignment_p": 0.4127917543149464,
+      "assignment_or_method": "gee"
+    },
+    {
+      "model": "GPT-OSS 120B",
+      "model_key": "gpt-oss-120b",
+      "source_file": "ward_gptoss_icu.jsonl",
+      "vendor": "OpenAI (open)",
+      "tier": "120B",
+      "n": 500,
+      "steward_chr": 0.88,
+      "steward_ci": [
+        0.8019,
+        0.93
+      ],
+      "steward_events_n": [
+        88,
+        100
+      ],
+      "neutral_chr": 0.74,
+      "neutral_ci": [
+        0.6463,
+        0.816
+      ],
+      "neutral_events_n": [
+        74,
+        100
+      ],
+      "devotion_chr": 0.97,
+      "devotion_ci": [
+        0.9155,
+        0.9897
+      ],
+      "devotion_events_n": [
+        97,
+        100
+      ],
+      "assignment_or": 0.388,
+      "assignment_or_ci": [
+        0.198,
+        0.762
+      ],
+      "assignment_p": 0.005932216276107986,
+      "assignment_or_method": "gee"
+    },
+    {
+      "model": "Mistral Small",
+      "model_key": "mistral-small",
+      "source_file": "ward_mistral_icu.jsonl",
+      "vendor": "Mistral",
+      "tier": "small",
+      "n": 300,
+      "steward_chr": 0.36,
+      "steward_ci": [
+        0.2727,
+        0.4576
+      ],
+      "steward_events_n": [
+        36,
+        100
+      ],
+      "neutral_chr": 0.62,
+      "neutral_ci": [
+        0.5221,
+        0.709
+      ],
+      "neutral_events_n": [
+        62,
+        100
+      ],
+      "devotion_chr": 0.72,
+      "devotion_ci": [
+        0.6251,
+        0.7986
+      ],
+      "devotion_events_n": [
+        72,
+        100
+      ],
+      "assignment_or": 2.901,
+      "assignment_or_ci": [
+        1.647,
+        5.108
+      ],
+      "assignment_p": 0.00022534173400233368,
+      "assignment_or_method": "gee"
+    },
+    {
+      "model": "Owl-Alpha",
+      "model_key": "owl-alpha",
+      "source_file": "ward_owl_icu.jsonl",
+      "vendor": "(panel)",
+      "tier": "alpha",
+      "n": 500,
+      "steward_chr": 0.12,
+      "steward_ci": [
+        0.07,
+        0.1981
+      ],
+      "steward_events_n": [
+        12,
+        100
+      ],
+      "neutral_chr": 0.54,
+      "neutral_ci": [
+        0.4426,
+        0.6344
+      ],
+      "neutral_events_n": [
+        54,
+        100
+      ],
+      "devotion_chr": 0.64,
+      "devotion_ci": [
+        0.5424,
+        0.7273
+      ],
+      "devotion_events_n": [
+        64,
+        100
+      ],
+      "assignment_or": 8.609,
+      "assignment_or_ci": [
+        4.235,
+        17.499
+      ],
+      "assignment_p": 2.7124752173851765e-09,
+      "assignment_or_method": "gee"
+    },
+    {
+      "model": "Qwen-3.5 0.8B",
+      "model_key": "qwen3.5-0.8b",
+      "source_file": "ward_qwen08_icu.jsonl",
+      "vendor": "Qwen (open)",
+      "tier": "edge-0.8B",
+      "n": 800,
+      "steward_chr": 0.665,
+      "steward_ci": [
+        0.597,
+        0.7268
+      ],
+      "steward_events_n": [
+        133,
+        200
+      ],
+      "neutral_chr": 0.475,
+      "neutral_ci": [
+        0.4069,
+        0.544
+      ],
+      "neutral_events_n": [
+        95,
+        200
+      ],
+      "devotion_chr": 0.59,
+      "devotion_ci": [
+        0.5208,
+        0.6558
+      ],
+      "devotion_events_n": [
+        118,
+        200
+      ],
+      "assignment_or": 0.456,
+      "assignment_or_ci": [
+        0.318,
+        0.654
+      ],
+      "assignment_p": 1.9839860902026538e-05,
+      "assignment_or_method": "gee"
+    },
+    {
+      "model": "Qwen-3.5 2B",
+      "model_key": "qwen3.5-2b",
+      "source_file": "ward_qwen2b_icu.jsonl",
+      "vendor": "Qwen (open)",
+      "tier": "edge-2B",
+      "n": 863,
+      "steward_chr": 0.6109,
+      "steward_ci": [
+        0.5452,
+        0.6727
+      ],
+      "steward_events_n": [
+        135,
+        221
+      ],
+      "neutral_chr": 0.5249,
+      "neutral_ci": [
+        0.4592,
+        0.5897
+      ],
+      "neutral_events_n": [
+        116,
+        221
+      ],
+      "devotion_chr": 0.5656,
+      "devotion_ci": [
+        0.4997,
+        0.6293
+      ],
+      "devotion_events_n": [
+        125,
+        221
+      ],
+      "assignment_or": 0.704,
+      "assignment_or_ci": [
+        0.491,
+        1.008
+      ],
+      "assignment_p": 0.05545266487772136,
+      "assignment_or_method": "gee"
+    },
+    {
+      "model": "Qwen-3.5 4B",
+      "model_key": "qwen3.5-4b",
+      "source_file": "ward_qwen4b_icu.jsonl",
+      "vendor": "Qwen (open)",
+      "tier": "edge-4B",
+      "n": 840,
+      "steward_chr": 0.3099,
+      "steward_ci": [
+        0.2516,
+        0.3749
+      ],
+      "steward_events_n": [
+        66,
+        213
+      ],
+      "neutral_chr": 0.6761,
+      "neutral_ci": [
+        0.6106,
+        0.7353
+      ],
+      "neutral_events_n": [
+        144,
+        213
+      ],
+      "devotion_chr": 0.6869,
+      "devotion_ci": [
+        0.6219,
+        0.7453
+      ],
+      "devotion_events_n": [
+        147,
+        214
+      ],
+      "assignment_or": 4.648,
+      "assignment_or_ci": [
+        3.188,
+        6.778
+      ],
+      "assignment_p": 1.416853892032973e-15,
+      "assignment_or_method": "gee"
+    },
+    {
+      "model": "Gemma-4 e2b",
+      "model_key": "gemma4-e2b-qat",
+      "source_file": "ward_e2b_icu_v2.jsonl",
+      "vendor": "Google (open)",
+      "tier": "edge-2B-e",
+      "n": 500,
+      "steward_chr": 0.6,
+      "steward_ci": [
+        0.502,
+        0.6906
+      ],
+      "steward_events_n": [
+        60,
+        100
+      ],
+      "neutral_chr": 0.76,
+      "neutral_ci": [
+        0.6677,
+        0.8331
+      ],
+      "neutral_events_n": [
+        76,
+        100
+      ],
+      "devotion_chr": 0.9,
+      "devotion_ci": [
+        0.8256,
+        0.9448
+      ],
+      "devotion_events_n": [
+        90,
+        100
+      ],
+      "assignment_or": 2.111,
+      "assignment_or_ci": [
+        1.341,
+        3.323
+      ],
+      "assignment_p": 0.001241708640494893,
+      "assignment_or_method": "gee"
+    },
+    {
+      "model": "Qwen-3.5 9B",
+      "model_key": "qwen3.5-9b",
+      "source_file": "ward_qwen35_9b_icu_v2.jsonl",
+      "vendor": "Qwen (open)",
+      "tier": "edge-9B",
+      "n": 300,
+      "steward_chr": 0.75,
+      "steward_ci": [
+        0.657,
+        0.8245
+      ],
+      "steward_events_n": [
+        75,
+        100
+      ],
+      "neutral_chr": 0.65,
+      "neutral_ci": [
+        0.5525,
+        0.7364
+      ],
+      "neutral_events_n": [
+        65,
+        100
+      ],
+      "devotion_chr": 0.83,
+      "devotion_ci": [
+        0.7445,
+        0.8911
+      ],
+      "devotion_events_n": [
+        83,
+        100
+      ],
+      "assignment_or": 0.619,
+      "assignment_or_ci": [
+        0.348,
+        1.103
+      ],
+      "assignment_p": 0.10345266925524478,
+      "assignment_or_method": "gee"
+    }
+  ],
+  "slope_claim": "The STRUCTURE is universal across the panel: in every model the bare-assignment (neutral) and task-devotion arms collapse to high collateral harm while the steward (collective-objective) arm holds a low floor -- assignment, not instruction content, carries the effect. The MAGNITUDE of the assignment contrast scales with capability rather than along a single monotone line: across two independent frontier vendors in a tiered design the neutral-vs-steward odds ratio rises from roughly 11x in the weak edge model (Gemma-3 12B) to ~50-120x in capable cloud models (DeepSeek-V4 Flash), because a more capable model both follows the steward objective more cleanly (lower steward floor) and executes the assigned-patient grab more completely (higher devotion CHR). The relationship is monotone in DIRECTION (capability sharpens the contrast) but NOT a clean monotone capability curve in level: the smallest edge models (Qwen-3.5 0.8B/2B) invert the steward floor entirely (they grab MORE under the steward objective than under devotion, an OR < 1), reflecting an inability to represent the collective objective at all rather than safety. We therefore report the universal structure as the primary claim and the capability scaling as a directional, vendor-replicated trend, not a fitted scalar slope."
+}

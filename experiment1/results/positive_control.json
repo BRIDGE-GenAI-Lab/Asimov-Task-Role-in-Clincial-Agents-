@@ -1,0 +1,9 @@
+{
+  "rule_agent_chr": 0.0,
+  "ci": [
+    0.0,
+    3.7
+  ],
+  "n": 100,
+  "harm_episodes": 0
+}

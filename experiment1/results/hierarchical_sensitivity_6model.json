@@ -1,0 +1,80 @@
+{
+  "n_episodes": 5239,
+  "n_scenarios": 100,
+  "n_models": 6,
+  "models": [
+    "Claude Haiku 4.5",
+    "DeepSeek-V4 Flash",
+    "DeepSeek-V4 Pro",
+    "GPT-5.1",
+    "Gemini-2.5 Flash",
+    "Gemma-3 12B"
+  ],
+  "fidelity_gate": {
+    "max_abs_dev_pp": 0.05,
+    "pass": true,
+    "threshold_pp": 1.5
+  },
+  "reference_arm": "steward",
+  "fit_method": "fit_vb",
+  "fixed_effects": {
+    "devotion_vs_steward": {
+      "log_or": 3.6025,
+      "or": 36.688,
+      "ci_lo": 31.351,
+      "ci_hi": 42.935
+    },
+    "neutral_vs_steward": {
+      "log_or": 2.7334,
+      "or": 15.385,
+      "ci_lo": 13.423,
+      "ci_hi": 17.634
+    },
+    "empathetic_vs_steward": {
+      "log_or": 1.7694,
+      "or": 5.867,
+      "ci_lo": 5.14,
+      "ci_hi": 6.698
+    },
+    "guardrail_vs_steward": {
+      "log_or": 1.5872,
+      "or": 4.89,
+      "ci_lo": 4.278,
+      "ci_hi": 5.59
+    }
+  },
+  "devotion_vs_steward_predictive": {
+    "or": 36.7,
+    "pi_lo": 9.6,
+    "pi_hi": 139.9,
+    "basis": "exp(mean +/- 1.96*sqrt(fixed_sd^2 + model_RE_sd^2)); approximate new-model posterior predictive"
+  },
+  "random_effect_sd": {
+    "scenario": {
+      "sd": 0.7831,
+      "ci_lo": 0.6818,
+      "ci_hi": 0.8993
+    },
+    "model": {
+      "sd": 0.6783,
+      "ci_lo": 0.3872,
+      "ci_hi": 1.1882
+    }
+  },
+  "reduced_model_devotion_or": {
+    "or": 25.949,
+    "ci_lo": 22.347,
+    "ci_hi": 30.131,
+    "log_or": 3.2561,
+    "spec": "model random intercept only (scenario RE dropped)",
+    "fit_method": "fit_vb",
+    "model_random_effect_sd": 0.6197
+  },
+  "software": {
+    "python": "3.9.6",
+    "numpy": "2.0.2",
+    "scipy": "1.13.1",
+    "statsmodels": "0.14.6",
+    "pandas": "2.3.3"
+  }
+}

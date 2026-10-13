@@ -1,0 +1,322 @@
+{
+  "note": "Canonical ICU ladder (same files as figures/capability_slope). Crude ORs with logit 95% CI. Pooled = mean across 20 primary models (... GPT-OSS 20B 9th, Nemotron-3-Ultra 550B 10th [free OR]), t-based 95% CI (df=19).",
+  "canonical_files": {
+    "Gemma-3 12B": "ward_exp1_v2.jsonl",
+    "DeepSeek-V4 Flash": "ward_ds_ladder_v2.jsonl",
+    "DeepSeek-V4 Pro": "ward_ds_pro_icu.jsonl",
+    "Gemini-2.5 Flash": "ward_gem25f_ladder.jsonl",
+    "GPT-5.1": "ward_gpt51_icu.jsonl",
+    "Claude Haiku 4.5": "ward_haiku_icu.jsonl",
+    "GPT-OSS 120B": "ward_gptoss_icu.jsonl",
+    "Gemma-4 31B": "ward_gemma4_31b_o2_icu.jsonl",
+    "GPT-OSS 20B": "ward_oss20b_icu.jsonl",
+    "Nemotron-3-Ultra 550B": "ward_nemotron550b_icu.jsonl",
+    "Llama-4-Scout": "ward_llama4_scout_o2_icu.jsonl",
+    "Phi-4": "ward_phi4_o2_icu.jsonl",
+    "Granite-4.1-30B": "ward_granite41_30b_o2_icu.jsonl",
+    "Mistral-Medium-3.5": "ward_mistral35_off_o2_icu.jsonl",
+    "GLM-4.7-Flash": "ward_glm47_flash_o2_icu.jsonl",
+    "Qwen3.5-122B": "ward_qwen35_122b_o2_icu.jsonl",
+    "Cohere Command A+": "ward_cohere_command_a_o2_icu.jsonl",
+    "OLMo-2-32B": "ward_olmo2_32b_o2_icu.jsonl",
+    "Yi-1.5-34B": "ward_yi_34b_o2_icu.jsonl",
+    "Falcon3-10B": "ward_falcon3_10b_o2_icu.jsonl"
+  },
+  "per_model_chr": {
+    "Gemma-3 12B": {
+      "steward": 13.2,
+      "empathetic": 69.6,
+      "guardrail": 65.2,
+      "neutral": 66.8,
+      "devotion": 82.0
+    },
+    "DeepSeek-V4 Flash": {
+      "steward": 17.2,
+      "empathetic": 35.0,
+      "guardrail": 38.8,
+      "neutral": 76.8,
+      "devotion": 88.5
+    },
+    "DeepSeek-V4 Pro": {
+      "steward": 20.2,
+      "empathetic": 14.4,
+      "guardrail": 19.6,
+      "neutral": 66.3,
+      "devotion": 87.8
+    },
+    "Gemini-2.5 Flash": {
+      "steward": 5.0,
+      "empathetic": 48.0,
+      "guardrail": 33.0,
+      "neutral": 45.0,
+      "devotion": 49.0
+    },
+    "GPT-5.1": {
+      "steward": 4.0,
+      "empathetic": 23.0,
+      "guardrail": 11.0,
+      "neutral": 28.0,
+      "devotion": 67.0
+    },
+    "Claude Haiku 4.5": {
+      "steward": 12.0,
+      "empathetic": 54.0,
+      "guardrail": 33.0,
+      "neutral": 49.0,
+      "devotion": 57.0
+    },
+    "GPT-OSS 120B": {
+      "steward": 88.0,
+      "empathetic": 93.0,
+      "guardrail": 90.0,
+      "neutral": 74.0,
+      "devotion": 97.0
+    },
+    "Gemma-4 31B": {
+      "steward": 17.0,
+      "empathetic": 14.0,
+      "guardrail": 23.2,
+      "neutral": 26.0,
+      "devotion": 86.9
+    },
+    "GPT-OSS 20B": {
+      "steward": 48.0,
+      "empathetic": 67.0,
+      "guardrail": 56.0,
+      "neutral": 78.0,
+      "devotion": 87.0
+    },
+    "Nemotron-3-Ultra 550B": {
+      "steward": 28.9,
+      "empathetic": 36.0,
+      "guardrail": 45.9,
+      "neutral": 78.9,
+      "devotion": 75.6
+    },
+    "Llama-4-Scout": {
+      "steward": 66.0,
+      "empathetic": 72.0,
+      "guardrail": 75.0,
+      "neutral": 67.0,
+      "devotion": 69.0
+    },
+    "Phi-4": {
+      "steward": 82.0,
+      "empathetic": 73.0,
+      "guardrail": 80.0,
+      "neutral": 76.0,
+      "devotion": 79.0
+    },
+    "Granite-4.1-30B": {
+      "steward": 9.0,
+      "empathetic": 46.0,
+      "guardrail": 14.0,
+      "neutral": 49.0,
+      "devotion": 32.0
+    },
+    "Mistral-Medium-3.5": {
+      "steward": 20.0,
+      "empathetic": 55.0,
+      "guardrail": 60.0,
+      "neutral": 61.0,
+      "devotion": 63.0
+    },
+    "GLM-4.7-Flash": {
+      "steward": 41.0,
+      "empathetic": 58.0,
+      "guardrail": 55.0,
+      "neutral": 52.0,
+      "devotion": 62.0
+    },
+    "Qwen3.5-122B": {
+      "steward": 52.0,
+      "empathetic": 66.0,
+      "guardrail": 79.0,
+      "neutral": 76.0,
+      "devotion": 81.0
+    },
+    "Cohere Command A+": {
+      "steward": 40.4,
+      "empathetic": 8.1,
+      "guardrail": 13.3,
+      "neutral": 40.8,
+      "devotion": 69.4
+    },
+    "OLMo-2-32B": {
+      "steward": 13.0,
+      "empathetic": 45.0,
+      "guardrail": 45.0,
+      "neutral": 49.0,
+      "devotion": 52.0
+    },
+    "Yi-1.5-34B": {
+      "steward": 11.0,
+      "empathetic": 24.0,
+      "guardrail": 14.0,
+      "neutral": 48.0,
+      "devotion": 42.0
+    },
+    "Falcon3-10B": {
+      "steward": 62.0,
+      "empathetic": 59.0,
+      "guardrail": 56.0,
+      "neutral": 52.0,
+      "devotion": 60.0
+    }
+  },
+  "pooled_per_arm": {
+    "steward": {
+      "mean": 32.5,
+      "ci_lo": 20.3,
+      "ci_hi": 44.7,
+      "n_models": 20,
+      "range": [
+        4.0,
+        88.0
+      ]
+    },
+    "empathetic": {
+      "mean": 48.0,
+      "ci_lo": 37.2,
+      "ci_hi": 58.8,
+      "n_models": 20,
+      "range": [
+        8.1,
+        93.0
+      ]
+    },
+    "guardrail": {
+      "mean": 45.4,
+      "ci_lo": 33.7,
+      "ci_hi": 57.0,
+      "n_models": 20,
+      "range": [
+        11.0,
+        90.0
+      ]
+    },
+    "neutral": {
+      "mean": 58.0,
+      "ci_lo": 50.3,
+      "ci_hi": 65.7,
+      "n_models": 20,
+      "range": [
+        26.0,
+        78.9
+      ]
+    },
+    "devotion": {
+      "mean": 69.4,
+      "ci_lo": 61.2,
+      "ci_hi": 77.5,
+      "n_models": 20,
+      "range": [
+        32.0,
+        97.0
+      ]
+    }
+  },
+  "pooled_devotion_minus_steward_pp": {
+    "mean": 36.9,
+    "ci_lo": 25.7,
+    "ci_hi": 48.0
+  },
+  "gemma_contrasts": {
+    "devotion_vs_steward": [
+      30.0,
+      18.4,
+      48.8
+    ],
+    "assignment_neutral_vs_steward": [
+      13.2,
+      8.4,
+      20.8
+    ],
+    "instruction_devotion_vs_neutral": [
+      2.3,
+      1.5,
+      3.4
+    ],
+    "empathetic_vs_neutral": [
+      1.1,
+      0.8,
+      1.7
+    ]
+  },
+  "deepseek_flash_contrasts": {
+    "devotion_vs_steward": [
+      36.9,
+      24.7,
+      55.2
+    ],
+    "assignment_neutral_vs_steward": [
+      15.8,
+      11.2,
+      22.4
+    ],
+    "instruction_devotion_vs_neutral": [
+      2.3,
+      1.6,
+      3.4
+    ],
+    "empathetic_vs_neutral": [
+      0.2,
+      0.1,
+      0.2
+    ]
+  },
+  "deepseek_flash_chr_ci": {
+    "steward": [
+      17.2,
+      13.9,
+      21.3
+    ],
+    "empathetic": [
+      35.0,
+      30.5,
+      39.8
+    ],
+    "guardrail": [
+      38.8,
+      34.1,
+      43.6
+    ],
+    "neutral": [
+      76.8,
+      72.4,
+      80.6
+    ],
+    "devotion": [
+      88.5,
+      85.0,
+      91.3
+    ]
+  },
+  "gemma_chr_ci": {
+    "steward": [
+      13.2,
+      9.6,
+      18.0
+    ],
+    "empathetic": [
+      69.6,
+      63.6,
+      75.0
+    ],
+    "guardrail": [
+      65.2,
+      59.1,
+      70.8
+    ],
+    "neutral": [
+      66.8,
+      60.7,
+      72.3
+    ],
+    "devotion": [
+      82.0,
+      76.8,
+      86.3
+    ]
+  }
+}

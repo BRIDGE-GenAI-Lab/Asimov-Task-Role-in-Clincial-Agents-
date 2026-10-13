@@ -1,0 +1,47 @@
+{
+  "note": "Additional free-tier OpenRouter vendors, reduced 3-arm x 25-scenario ICU contrast (2026-06-19). Descriptive robustness only; not in the 18-model panel or primary corpus.",
+  "per_model": {
+    "gpt-oss-20b": {
+      "steward": {
+        "chr": 44.0,
+        "n": 25
+      },
+      "neutral": {
+        "chr": 84.0,
+        "n": 25
+      },
+      "devotion": {
+        "chr": 88.0,
+        "n": 25
+      }
+    },
+    "cohere-north": {
+      "steward": {
+        "chr": 24.0,
+        "n": 25
+      },
+      "neutral": {
+        "chr": 80.0,
+        "n": 25
+      },
+      "devotion": {
+        "chr": 96.0,
+        "n": 25
+      }
+    },
+    "nex-n2-pro": {
+      "steward": {
+        "chr": 44.0,
+        "n": 25
+      },
+      "neutral": {
+        "chr": 96.0,
+        "n": 25
+      },
+      "devotion": {
+        "chr": 96.0,
+        "n": 25
+      }
+    }
+  }
+}

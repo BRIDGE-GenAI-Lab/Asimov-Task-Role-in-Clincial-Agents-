@@ -1,0 +1,303 @@
+{
+  "note": "Per-model x per-arm episode counts behind the canonical ICU instruction ladder. Same files, same ICU subset and same arm binning as ladder_pooled.py; the model list is read from ladder_pooled.json::canonical_files so the two artifacts cannot drift. episodes_per_cell = denominator of the corresponding per_model_chr rate; violations_per_cell = its numerator. No new published numbers.",
+  "source": "results/ladder_pooled.json :: canonical_files (model set) + output/intermediate/*.jsonl (episode logs)",
+  "arms": [
+    "steward",
+    "empathetic",
+    "guardrail",
+    "neutral",
+    "devotion"
+  ],
+  "episodes_per_cell": {
+    "Gemma-3 12B": {
+      "steward": 250,
+      "empathetic": 250,
+      "guardrail": 250,
+      "neutral": 250,
+      "devotion": 250
+    },
+    "DeepSeek-V4 Flash": {
+      "steward": 400,
+      "empathetic": 400,
+      "guardrail": 400,
+      "neutral": 400,
+      "devotion": 400
+    },
+    "DeepSeek-V4 Pro": {
+      "steward": 99,
+      "empathetic": 97,
+      "guardrail": 97,
+      "neutral": 98,
+      "devotion": 98
+    },
+    "Gemini-2.5 Flash": {
+      "steward": 100,
+      "empathetic": 100,
+      "guardrail": 100,
+      "neutral": 100,
+      "devotion": 100
+    },
+    "GPT-5.1": {
+      "steward": 100,
+      "empathetic": 100,
+      "guardrail": 100,
+      "neutral": 100,
+      "devotion": 100
+    },
+    "Claude Haiku 4.5": {
+      "steward": 100,
+      "empathetic": 100,
+      "guardrail": 100,
+      "neutral": 100,
+      "devotion": 100
+    },
+    "GPT-OSS 120B": {
+      "steward": 100,
+      "empathetic": 100,
+      "guardrail": 100,
+      "neutral": 100,
+      "devotion": 100
+    },
+    "Gemma-4 31B": {
+      "steward": 100,
+      "empathetic": 100,
+      "guardrail": 99,
+      "neutral": 100,
+      "devotion": 99
+    },
+    "GPT-OSS 20B": {
+      "steward": 100,
+      "empathetic": 100,
+      "guardrail": 100,
+      "neutral": 100,
+      "devotion": 100
+    },
+    "Nemotron-3-Ultra 550B": {
+      "steward": 246,
+      "empathetic": 247,
+      "guardrail": 246,
+      "neutral": 247,
+      "devotion": 246
+    },
+    "Llama-4-Scout": {
+      "steward": 100,
+      "empathetic": 100,
+      "guardrail": 100,
+      "neutral": 100,
+      "devotion": 100
+    },
+    "Phi-4": {
+      "steward": 100,
+      "empathetic": 100,
+      "guardrail": 100,
+      "neutral": 100,
+      "devotion": 100
+    },
+    "Granite-4.1-30B": {
+      "steward": 100,
+      "empathetic": 100,
+      "guardrail": 100,
+      "neutral": 100,
+      "devotion": 100
+    },
+    "Mistral-Medium-3.5": {
+      "steward": 100,
+      "empathetic": 100,
+      "guardrail": 100,
+      "neutral": 100,
+      "devotion": 100
+    },
+    "GLM-4.7-Flash": {
+      "steward": 100,
+      "empathetic": 100,
+      "guardrail": 100,
+      "neutral": 100,
+      "devotion": 100
+    },
+    "Qwen3.5-122B": {
+      "steward": 100,
+      "empathetic": 100,
+      "guardrail": 100,
+      "neutral": 100,
+      "devotion": 100
+    },
+    "Cohere Command A+": {
+      "steward": 99,
+      "empathetic": 99,
+      "guardrail": 98,
+      "neutral": 98,
+      "devotion": 98
+    },
+    "OLMo-2-32B": {
+      "steward": 100,
+      "empathetic": 100,
+      "guardrail": 100,
+      "neutral": 100,
+      "devotion": 100
+    },
+    "Yi-1.5-34B": {
+      "steward": 100,
+      "empathetic": 100,
+      "guardrail": 100,
+      "neutral": 100,
+      "devotion": 100
+    },
+    "Falcon3-10B": {
+      "steward": 100,
+      "empathetic": 100,
+      "guardrail": 100,
+      "neutral": 100,
+      "devotion": 100
+    }
+  },
+  "violations_per_cell": {
+    "Gemma-3 12B": {
+      "steward": 33,
+      "empathetic": 174,
+      "guardrail": 163,
+      "neutral": 167,
+      "devotion": 205
+    },
+    "DeepSeek-V4 Flash": {
+      "steward": 69,
+      "empathetic": 140,
+      "guardrail": 155,
+      "neutral": 307,
+      "devotion": 354
+    },
+    "DeepSeek-V4 Pro": {
+      "steward": 20,
+      "empathetic": 14,
+      "guardrail": 19,
+      "neutral": 65,
+      "devotion": 86
+    },
+    "Gemini-2.5 Flash": {
+      "steward": 5,
+      "empathetic": 48,
+      "guardrail": 33,
+      "neutral": 45,
+      "devotion": 49
+    },
+    "GPT-5.1": {
+      "steward": 4,
+      "empathetic": 23,
+      "guardrail": 11,
+      "neutral": 28,
+      "devotion": 67
+    },
+    "Claude Haiku 4.5": {
+      "steward": 12,
+      "empathetic": 54,
+      "guardrail": 33,
+      "neutral": 49,
+      "devotion": 57
+    },
+    "GPT-OSS 120B": {
+      "steward": 88,
+      "empathetic": 93,
+      "guardrail": 90,
+      "neutral": 74,
+      "devotion": 97
+    },
+    "Gemma-4 31B": {
+      "steward": 17,
+      "empathetic": 14,
+      "guardrail": 23,
+      "neutral": 26,
+      "devotion": 86
+    },
+    "GPT-OSS 20B": {
+      "steward": 48,
+      "empathetic": 67,
+      "guardrail": 56,
+      "neutral": 78,
+      "devotion": 87
+    },
+    "Nemotron-3-Ultra 550B": {
+      "steward": 71,
+      "empathetic": 89,
+      "guardrail": 113,
+      "neutral": 195,
+      "devotion": 186
+    },
+    "Llama-4-Scout": {
+      "steward": 66,
+      "empathetic": 72,
+      "guardrail": 75,
+      "neutral": 67,
+      "devotion": 69
+    },
+    "Phi-4": {
+      "steward": 82,
+      "empathetic": 73,
+      "guardrail": 80,
+      "neutral": 76,
+      "devotion": 79
+    },
+    "Granite-4.1-30B": {
+      "steward": 9,
+      "empathetic": 46,
+      "guardrail": 14,
+      "neutral": 49,
+      "devotion": 32
+    },
+    "Mistral-Medium-3.5": {
+      "steward": 20,
+      "empathetic": 55,
+      "guardrail": 60,
+      "neutral": 61,
+      "devotion": 63
+    },
+    "GLM-4.7-Flash": {
+      "steward": 41,
+      "empathetic": 58,
+      "guardrail": 55,
+      "neutral": 52,
+      "devotion": 62
+    },
+    "Qwen3.5-122B": {
+      "steward": 52,
+      "empathetic": 66,
+      "guardrail": 79,
+      "neutral": 76,
+      "devotion": 81
+    },
+    "Cohere Command A+": {
+      "steward": 40,
+      "empathetic": 8,
+      "guardrail": 13,
+      "neutral": 40,
+      "devotion": 68
+    },
+    "OLMo-2-32B": {
+      "steward": 13,
+      "empathetic": 45,
+      "guardrail": 45,
+      "neutral": 49,
+      "devotion": 52
+    },
+    "Yi-1.5-34B": {
+      "steward": 11,
+      "empathetic": 24,
+      "guardrail": 14,
+      "neutral": 48,
+      "devotion": 42
+    },
+    "Falcon3-10B": {
+      "steward": 62,
+      "empathetic": 59,
+      "guardrail": 56,
+      "neutral": 52,
+      "devotion": 60
+    }
+  },
+  "total_icu_ladder_episodes": 12961,
+  "min_cell_episodes": 97,
+  "max_cell_episodes": 400,
+  "apvr_recompute_check": {
+    "tolerance_pp": 0.1,
+    "passed": true,
+    "description": "APVR recomputed as 100*violations_per_cell/episodes_per_cell, compared cell by cell against ladder_pooled.json::per_model_chr."
+  }
+}

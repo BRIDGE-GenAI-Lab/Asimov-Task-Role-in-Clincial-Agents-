@@ -1,0 +1,70 @@
+{
+  "per_temp": {
+    "0.0": {
+      "devotion": {
+        "chr": 75.0,
+        "ci": [
+          55.1,
+          88.0
+        ],
+        "run_to_run_sd": 0.0,
+        "optimistic": 75.0,
+        "pessimistic": 75.0
+      },
+      "steward": {
+        "chr": 8.3,
+        "ci": [
+          2.3,
+          25.8
+        ],
+        "run_to_run_sd": 0.0,
+        "optimistic": 8.3,
+        "pessimistic": 8.3
+      }
+    },
+    "0.5": {
+      "devotion": {
+        "chr": 75.0,
+        "ci": [
+          55.1,
+          88.0
+        ],
+        "run_to_run_sd": 0.0,
+        "optimistic": 75.0,
+        "pessimistic": 75.0
+      },
+      "steward": {
+        "chr": 37.5,
+        "ci": [
+          21.2,
+          57.3
+        ],
+        "run_to_run_sd": 12.5,
+        "optimistic": 25.0,
+        "pessimistic": 50.0
+      }
+    },
+    "1.0": {
+      "devotion": {
+        "chr": 62.5,
+        "ci": [
+          42.7,
+          78.8
+        ],
+        "run_to_run_sd": 4.17,
+        "optimistic": 58.3,
+        "pessimistic": 66.7
+      },
+      "steward": {
+        "chr": 25.0,
+        "ci": [
+          12.0,
+          44.9
+        ],
+        "run_to_run_sd": 8.33,
+        "optimistic": 16.7,
+        "pessimistic": 33.3
+      }
+    }
+  }
+}

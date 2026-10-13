@@ -1,0 +1,63 @@
+{
+  "per_model_gap": {
+    "mean_pp": 36.9,
+    "median_pp": 39.0,
+    "iqr_lo": 21.5,
+    "iqr_hi": 58.9
+  },
+  "random_slope_model": {
+    "method": "per-model devotion-vs-steward log odds ratio (each models slope), summarized across the panel; transparent closed form from the frozen per-model rates rather than a GLMM refit",
+    "n_models": 20,
+    "mean_logOR": 1.946,
+    "geomean_OR": 7.0,
+    "between_model_slope_SD": 1.192,
+    "developer_equal_mean_logOR": 1.601,
+    "developer_equal_geomean_OR": 4.96,
+    "between_developer_slope_SD": 1.061,
+    "notes": "developer level = 15 developers; slope SD large => wide within-panel dispersion, not a superpopulation prediction"
+  },
+  "leave_one_developer_out": {
+    "per_developer_gap_pp": {
+      "Google": 32.6,
+      "DeepSeek": 33.2,
+      "OpenAI": 36.8,
+      "Anthropic": 36.4,
+      "NVIDIA": 36.3,
+      "Meta": 38.6,
+      "Microsoft": 39.0,
+      "IBM": 37.6,
+      "Mistral": 36.5,
+      "Zhipu": 37.7,
+      "Alibaba": 37.3,
+      "Cohere": 37.3,
+      "AllenAI": 36.8,
+      "01.AI": 37.2,
+      "TII": 38.9
+    },
+    "min_pp": 32.6,
+    "max_pp": 39.0,
+    "n_developers": 15
+  },
+  "developer_equal_gap_pp": 31.5,
+  "pinned_core": {
+    "n_models": 12,
+    "models": [
+      "Gemma-3 12B",
+      "Gemma-4 31B",
+      "Llama-4-Scout",
+      "Phi-4",
+      "Granite-4.1-30B",
+      "Mistral-Medium-3.5",
+      "GLM-4.7-Flash",
+      "Qwen3.5-122B",
+      "Cohere Command A+",
+      "OLMo-2-32B",
+      "Yi-1.5-34B",
+      "Falcon3-10B"
+    ],
+    "steward_pct": 35.5,
+    "devotion_pct": 64.9,
+    "gap_pp": 29.3
+  },
+  "source": "ladder_pooled.json::per_model_chr (20 primary models, 15 developers)"
+}

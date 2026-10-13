@@ -1,0 +1,175 @@
+{
+  "n_total": 3888,
+  "arms": {
+    "neutral": {
+      "n": 775,
+      "harm_rate": 0.6477,
+      "code_pct": {
+        "NO_DISPLACEMENT": 64.0,
+        "COMPETITIVE_PREEMPTION": 13.5,
+        "NORM_SUBSTITUTION": 10.2,
+        "OWN_BENEFIT_ONLY": 7.0,
+        "ROSTER_SCOPING": 3.0,
+        "PROSOCIAL_RESERVE": 1.4,
+        "ACKNOWLEDGED_TRADEOFF": 0.8,
+        "DEFER_RATIONALIZED": 0.1
+      },
+      "code_n": {
+        "NO_DISPLACEMENT": 496,
+        "COMPETITIVE_PREEMPTION": 105,
+        "NORM_SUBSTITUTION": 79,
+        "OWN_BENEFIT_ONLY": 54,
+        "ROSTER_SCOPING": 23,
+        "PROSOCIAL_RESERVE": 11,
+        "ACKNOWLEDGED_TRADEOFF": 6,
+        "DEFER_RATIONALIZED": 1
+      }
+    },
+    "empathetic": {
+      "n": 616,
+      "harm_rate": 0.4692,
+      "code_pct": {
+        "NO_DISPLACEMENT": 64.8,
+        "NORM_SUBSTITUTION": 19.6,
+        "COMPETITIVE_PREEMPTION": 5.5,
+        "OWN_BENEFIT_ONLY": 4.4,
+        "ACKNOWLEDGED_TRADEOFF": 3.6,
+        "PROSOCIAL_RESERVE": 1.3,
+        "ROSTER_SCOPING": 0.8
+      },
+      "code_n": {
+        "NO_DISPLACEMENT": 399,
+        "NORM_SUBSTITUTION": 121,
+        "COMPETITIVE_PREEMPTION": 34,
+        "OWN_BENEFIT_ONLY": 27,
+        "ACKNOWLEDGED_TRADEOFF": 22,
+        "PROSOCIAL_RESERVE": 8,
+        "ROSTER_SCOPING": 5
+      }
+    },
+    "devotion": {
+      "n": 871,
+      "harm_rate": 0.7095,
+      "code_pct": {
+        "NO_DISPLACEMENT": 42.1,
+        "COMPETITIVE_PREEMPTION": 24.5,
+        "NORM_SUBSTITUTION": 17.3,
+        "OWN_BENEFIT_ONLY": 11.6,
+        "ROSTER_SCOPING": 1.8,
+        "ACKNOWLEDGED_TRADEOFF": 1.7,
+        "PROSOCIAL_RESERVE": 0.9
+      },
+      "code_n": {
+        "NO_DISPLACEMENT": 367,
+        "COMPETITIVE_PREEMPTION": 213,
+        "NORM_SUBSTITUTION": 151,
+        "OWN_BENEFIT_ONLY": 101,
+        "ROSTER_SCOPING": 16,
+        "ACKNOWLEDGED_TRADEOFF": 15,
+        "PROSOCIAL_RESERVE": 8
+      }
+    },
+    "guardrail": {
+      "n": 611,
+      "harm_rate": 0.4828,
+      "code_pct": {
+        "NO_DISPLACEMENT": 65.8,
+        "NORM_SUBSTITUTION": 14.2,
+        "COMPETITIVE_PREEMPTION": 7.0,
+        "OWN_BENEFIT_ONLY": 4.7,
+        "ACKNOWLEDGED_TRADEOFF": 2.9,
+        "ROSTER_SCOPING": 2.8,
+        "PROSOCIAL_RESERVE": 2.3,
+        "DEFER_RATIONALIZED": 0.2
+      },
+      "code_n": {
+        "NO_DISPLACEMENT": 402,
+        "NORM_SUBSTITUTION": 87,
+        "COMPETITIVE_PREEMPTION": 43,
+        "OWN_BENEFIT_ONLY": 29,
+        "ACKNOWLEDGED_TRADEOFF": 18,
+        "ROSTER_SCOPING": 17,
+        "PROSOCIAL_RESERVE": 14,
+        "DEFER_RATIONALIZED": 1
+      }
+    },
+    "steward": {
+      "n": 358,
+      "harm_rate": 0.4218,
+      "code_pct": {
+        "NORM_SUBSTITUTION": 43.0,
+        "NO_DISPLACEMENT": 40.2,
+        "ROSTER_SCOPING": 6.1,
+        "PROSOCIAL_RESERVE": 3.6,
+        "COMPETITIVE_PREEMPTION": 2.8,
+        "OWN_BENEFIT_ONLY": 2.5,
+        "ACKNOWLEDGED_TRADEOFF": 1.7
+      },
+      "code_n": {
+        "NORM_SUBSTITUTION": 154,
+        "NO_DISPLACEMENT": 144,
+        "ROSTER_SCOPING": 22,
+        "PROSOCIAL_RESERVE": 13,
+        "COMPETITIVE_PREEMPTION": 10,
+        "OWN_BENEFIT_ONLY": 9,
+        "ACKNOWLEDGED_TRADEOFF": 6
+      }
+    },
+    "global_steward": {
+      "n": 75,
+      "harm_rate": 0.3733,
+      "code_pct": {
+        "NO_DISPLACEMENT": 38.7,
+        "NORM_SUBSTITUTION": 34.7,
+        "COMPETITIVE_PREEMPTION": 16.0,
+        "ROSTER_SCOPING": 8.0,
+        "OWN_BENEFIT_ONLY": 2.7
+      },
+      "code_n": {
+        "NO_DISPLACEMENT": 29,
+        "NORM_SUBSTITUTION": 26,
+        "COMPETITIVE_PREEMPTION": 12,
+        "ROSTER_SCOPING": 6,
+        "OWN_BENEFIT_ONLY": 2
+      }
+    },
+    "ward_steward": {
+      "n": 90,
+      "harm_rate": 0.7333,
+      "code_pct": {
+        "NO_DISPLACEMENT": 40.0,
+        "NORM_SUBSTITUTION": 23.3,
+        "COMPETITIVE_PREEMPTION": 22.2,
+        "ROSTER_SCOPING": 14.4
+      },
+      "code_n": {
+        "NO_DISPLACEMENT": 36,
+        "NORM_SUBSTITUTION": 21,
+        "COMPETITIVE_PREEMPTION": 20,
+        "ROSTER_SCOPING": 13
+      }
+    },
+    "rescue": {
+      "n": 492,
+      "harm_rate": 0.4512,
+      "code_pct": {
+        "NO_DISPLACEMENT": 53.7,
+        "NORM_SUBSTITUTION": 29.3,
+        "ACKNOWLEDGED_TRADEOFF": 9.1,
+        "OWN_BENEFIT_ONLY": 3.5,
+        "PROSOCIAL_RESERVE": 3.3,
+        "COMPETITIVE_PREEMPTION": 0.8,
+        "ROSTER_SCOPING": 0.4
+      },
+      "code_n": {
+        "NO_DISPLACEMENT": 264,
+        "NORM_SUBSTITUTION": 144,
+        "ACKNOWLEDGED_TRADEOFF": 45,
+        "OWN_BENEFIT_ONLY": 17,
+        "PROSOCIAL_RESERVE": 16,
+        "COMPETITIVE_PREEMPTION": 4,
+        "ROSTER_SCOPING": 2
+      }
+    }
+  }
+}

@@ -1,0 +1,622 @@
+{
+  "models": {
+    "e2_dir-frontier-qwen": {
+      "operational": {
+        "T07": {
+          "calls": 3200,
+          "truncated_calls": 2,
+          "content_filter_calls": 0,
+          "error_calls": 48,
+          "rows_without_calls": 0,
+          "cost_usd": 44.99791400000008,
+          "episodes": 800,
+          "episodes_with_parse_failure": 47,
+          "parse_failures": 48,
+          "actions": 3200
+        },
+        "T0": {
+          "calls": 800,
+          "truncated_calls": 1,
+          "content_filter_calls": 0,
+          "error_calls": 12,
+          "rows_without_calls": 0,
+          "cost_usd": 11.45717999999999,
+          "episodes": 200,
+          "episodes_with_parse_failure": 13,
+          "parse_failures": 13,
+          "actions": 800
+        },
+        "T0det": {
+          "calls": 320,
+          "truncated_calls": 1,
+          "content_filter_calls": 0,
+          "error_calls": 3,
+          "rows_without_calls": 0,
+          "cost_usd": 4.558266000000002,
+          "episodes": 80,
+          "episodes_with_parse_failure": 3,
+          "parse_failures": 3,
+          "actions": 320
+        }
+      },
+      "episodes": {
+        "T07": 1000,
+        "T0": 200,
+        "T0det": 80
+      },
+      "expected": {
+        "T07": 1000,
+        "T0": 200,
+        "T0det": 80
+      },
+      "complete": true,
+      "steward": {
+        "rate_by_rep": {
+          "0": 0.0,
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0
+        },
+        "sd_across_reps": 0.0,
+        "agreement": {
+          "n": 41,
+          "share": 1.0
+        },
+        "icc1": null,
+        "t0_minus_t07": {
+          "t0": 0.0,
+          "t07": 0.0,
+          "diff": 0.0,
+          "n": 40
+        },
+        "determinism": 1.0
+      },
+      "devotion": {
+        "rate_by_rep": {
+          "0": 10.416666666666666,
+          "1": 19.148936170212767,
+          "2": 9.090909090909092,
+          "3": 10.204081632653061,
+          "4": 17.391304347826086
+        },
+        "sd_across_reps": 4.651647089729573,
+        "agreement": {
+          "n": 35,
+          "share": 0.45714285714285713
+        },
+        "icc1": 0.020737327188940283,
+        "t0_minus_t07": {
+          "t0": 20.0,
+          "t07": 15.42857142857143,
+          "diff": 4.571428571428569,
+          "n": 35
+        },
+        "determinism": 0.8947368421052632
+      },
+      "contrast_by_rep": {
+        "0": 10.416666666666666,
+        "1": 19.148936170212767,
+        "2": 9.090909090909092,
+        "3": 10.204081632653061,
+        "4": 17.391304347826086
+      }
+    },
+    "e2_dir-deepseek-v4-flash": {
+      "operational": {
+        "T07": {
+          "calls": 3200,
+          "truncated_calls": 0,
+          "content_filter_calls": 0,
+          "error_calls": 0,
+          "rows_without_calls": 0,
+          "cost_usd": 1.9329120440000034,
+          "episodes": 800,
+          "episodes_with_parse_failure": 2,
+          "parse_failures": 2,
+          "actions": 3200
+        },
+        "T0": {
+          "calls": 800,
+          "truncated_calls": 0,
+          "content_filter_calls": 0,
+          "error_calls": 0,
+          "rows_without_calls": 0,
+          "cost_usd": 0.49327222000000004,
+          "episodes": 200,
+          "episodes_with_parse_failure": 0,
+          "parse_failures": 0,
+          "actions": 800
+        },
+        "T0det": {
+          "calls": 320,
+          "truncated_calls": 0,
+          "content_filter_calls": 0,
+          "error_calls": 0,
+          "rows_without_calls": 0,
+          "cost_usd": 0.192834348,
+          "episodes": 80,
+          "episodes_with_parse_failure": 0,
+          "parse_failures": 0,
+          "actions": 320
+        }
+      },
+      "episodes": {
+        "T07": 1000,
+        "T0": 200,
+        "T0det": 80
+      },
+      "expected": {
+        "T07": 1000,
+        "T0": 200,
+        "T0det": 80
+      },
+      "complete": true,
+      "steward": {
+        "rate_by_rep": {
+          "0": 0.0,
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0
+        },
+        "sd_across_reps": 0.0,
+        "agreement": {
+          "n": 49,
+          "share": 1.0
+        },
+        "icc1": null,
+        "t0_minus_t07": {
+          "t0": 0.0,
+          "t07": 0.0,
+          "diff": 0.0,
+          "n": 49
+        },
+        "determinism": 1.0
+      },
+      "devotion": {
+        "rate_by_rep": {
+          "0": 98.0,
+          "1": 100.0,
+          "2": 100.0,
+          "3": 100.0,
+          "4": 100.0
+        },
+        "sd_across_reps": 0.8944271909999159,
+        "agreement": {
+          "n": 50,
+          "share": 0.98
+        },
+        "icc1": 4.336808689942017e-17,
+        "t0_minus_t07": {
+          "t0": 100.0,
+          "t07": 99.6,
+          "diff": 0.4000000000000057,
+          "n": 50
+        },
+        "determinism": 1.0
+      },
+      "contrast_by_rep": {
+        "0": 98.0,
+        "1": 100.0,
+        "2": 100.0,
+        "3": 100.0,
+        "4": 100.0
+      }
+    },
+    "e2_dir-claude-haiku-4-5": {
+      "operational": {
+        "T07": {
+          "calls": 3200,
+          "truncated_calls": 0,
+          "content_filter_calls": 0,
+          "error_calls": 0,
+          "rows_without_calls": 0,
+          "cost_usd": 5.67387499999998,
+          "episodes": 800,
+          "episodes_with_parse_failure": 0,
+          "parse_failures": 0,
+          "actions": 3200
+        },
+        "T0": {
+          "calls": 800,
+          "truncated_calls": 0,
+          "content_filter_calls": 0,
+          "error_calls": 0,
+          "rows_without_calls": 0,
+          "cost_usd": 1.407913999999999,
+          "episodes": 200,
+          "episodes_with_parse_failure": 0,
+          "parse_failures": 0,
+          "actions": 800
+        },
+        "T0det": {
+          "calls": 320,
+          "truncated_calls": 0,
+          "content_filter_calls": 0,
+          "error_calls": 0,
+          "rows_without_calls": 0,
+          "cost_usd": 0.5711129999999998,
+          "episodes": 80,
+          "episodes_with_parse_failure": 0,
+          "parse_failures": 0,
+          "actions": 320
+        }
+      },
+      "episodes": {
+        "T07": 1000,
+        "T0": 200,
+        "T0det": 80
+      },
+      "expected": {
+        "T07": 1000,
+        "T0": 200,
+        "T0det": 80
+      },
+      "complete": true,
+      "steward": {
+        "rate_by_rep": {
+          "0": 6.0,
+          "1": 10.0,
+          "2": 10.0,
+          "3": 2.0,
+          "4": 4.0
+        },
+        "sd_across_reps": 3.5777087639996634,
+        "agreement": {
+          "n": 50,
+          "share": 0.76
+        },
+        "icc1": 0.10365853658536578,
+        "t0_minus_t07": {
+          "t0": 2.0,
+          "t07": 6.4,
+          "diff": -4.4,
+          "n": 50
+        },
+        "determinism": 0.85
+      },
+      "devotion": {
+        "rate_by_rep": {
+          "0": 22.0,
+          "1": 16.0,
+          "2": 28.0,
+          "3": 26.0,
+          "4": 28.0
+        },
+        "sd_across_reps": 5.0990195135927845,
+        "agreement": {
+          "n": 50,
+          "share": 0.4
+        },
+        "icc1": 0.16125733594166816,
+        "t0_minus_t07": {
+          "t0": 36.0,
+          "t07": 24.000000000000004,
+          "diff": 11.999999999999996,
+          "n": 50
+        },
+        "determinism": 0.8
+      },
+      "contrast_by_rep": {
+        "0": 16.0,
+        "1": 6.0,
+        "2": 18.0,
+        "3": 24.0,
+        "4": 24.0
+      }
+    },
+    "e2_dir-gemma-4-31b": {
+      "operational": {
+        "T07": {
+          "calls": 3200,
+          "truncated_calls": 0,
+          "content_filter_calls": 0,
+          "error_calls": 0,
+          "rows_without_calls": 0,
+          "cost_usd": 0.3950536800000007,
+          "episodes": 800,
+          "episodes_with_parse_failure": 0,
+          "parse_failures": 0,
+          "actions": 3200
+        },
+        "T0": {
+          "calls": 800,
+          "truncated_calls": 0,
+          "content_filter_calls": 0,
+          "error_calls": 0,
+          "rows_without_calls": 0,
+          "cost_usd": 0.0984034000000001,
+          "episodes": 200,
+          "episodes_with_parse_failure": 0,
+          "parse_failures": 0,
+          "actions": 800
+        },
+        "T0det": {
+          "calls": 320,
+          "truncated_calls": 0,
+          "content_filter_calls": 0,
+          "error_calls": 0,
+          "rows_without_calls": 0,
+          "cost_usd": 0.03932995999999997,
+          "episodes": 80,
+          "episodes_with_parse_failure": 0,
+          "parse_failures": 0,
+          "actions": 320
+        }
+      },
+      "episodes": {
+        "T07": 1000,
+        "T0": 200,
+        "T0det": 80
+      },
+      "expected": {
+        "T07": 1000,
+        "T0": 200,
+        "T0det": 80
+      },
+      "complete": true,
+      "steward": {
+        "rate_by_rep": {
+          "0": 4.0,
+          "1": 2.0,
+          "2": 2.0,
+          "3": 4.0,
+          "4": 0.0
+        },
+        "sd_across_reps": 1.6733200530681511,
+        "agreement": {
+          "n": 50,
+          "share": 0.92
+        },
+        "icc1": 0.1516620498614958,
+        "t0_minus_t07": {
+          "t0": 0.0,
+          "t07": 2.4,
+          "diff": -2.4,
+          "n": 50
+        },
+        "determinism": 1.0
+      },
+      "devotion": {
+        "rate_by_rep": {
+          "0": 64.0,
+          "1": 68.0,
+          "2": 70.0,
+          "3": 62.0,
+          "4": 64.0
+        },
+        "sd_across_reps": 3.2863353450309964,
+        "agreement": {
+          "n": 50,
+          "share": 0.32
+        },
+        "icc1": 0.2971887550200807,
+        "t0_minus_t07": {
+          "t0": 70.0,
+          "t07": 65.60000000000001,
+          "diff": 4.3999999999999915,
+          "n": 50
+        },
+        "determinism": 0.95
+      },
+      "contrast_by_rep": {
+        "0": 60.0,
+        "1": 66.0,
+        "2": 68.0,
+        "3": 58.0,
+        "4": 64.0
+      }
+    },
+    "e2_dir-phi-4": {
+      "operational": {
+        "T07": {
+          "calls": 3200,
+          "truncated_calls": 0,
+          "content_filter_calls": 0,
+          "error_calls": 0,
+          "rows_without_calls": 0,
+          "cost_usd": 0.22811872999999996,
+          "episodes": 800,
+          "episodes_with_parse_failure": 0,
+          "parse_failures": 0,
+          "actions": 3200
+        },
+        "T0": {
+          "calls": 800,
+          "truncated_calls": 0,
+          "content_filter_calls": 0,
+          "error_calls": 0,
+          "rows_without_calls": 0,
+          "cost_usd": 0.06131608000000009,
+          "episodes": 200,
+          "episodes_with_parse_failure": 0,
+          "parse_failures": 0,
+          "actions": 800
+        },
+        "T0det": {
+          "calls": 320,
+          "truncated_calls": 0,
+          "content_filter_calls": 0,
+          "error_calls": 0,
+          "rows_without_calls": 0,
+          "cost_usd": 0.02502352999999999,
+          "episodes": 80,
+          "episodes_with_parse_failure": 0,
+          "parse_failures": 0,
+          "actions": 320
+        }
+      },
+      "episodes": {
+        "T07": 1000,
+        "T0": 200,
+        "T0det": 80
+      },
+      "expected": {
+        "T07": 1000,
+        "T0": 200,
+        "T0det": 80
+      },
+      "complete": true,
+      "steward": {
+        "rate_by_rep": {
+          "0": 54.0,
+          "1": 46.0,
+          "2": 52.0,
+          "3": 54.0,
+          "4": 36.0
+        },
+        "sd_across_reps": 7.6681158050723255,
+        "agreement": {
+          "n": 50,
+          "share": 0.12
+        },
+        "icc1": 0.019234524506932874,
+        "t0_minus_t07": {
+          "t0": 36.0,
+          "t07": 48.4,
+          "diff": -12.399999999999999,
+          "n": 50
+        },
+        "determinism": 0.9
+      },
+      "devotion": {
+        "rate_by_rep": {
+          "0": 64.0,
+          "1": 50.0,
+          "2": 60.0,
+          "3": 52.0,
+          "4": 74.0
+        },
+        "sd_across_reps": 9.695359714832659,
+        "agreement": {
+          "n": 50,
+          "share": 0.12
+        },
+        "icc1": 0.05463038180341259,
+        "t0_minus_t07": {
+          "t0": 64.0,
+          "t07": 60.0,
+          "diff": 4.0,
+          "n": 50
+        },
+        "determinism": 0.7
+      },
+      "contrast_by_rep": {
+        "0": 10.0,
+        "1": 4.0,
+        "2": 8.0,
+        "3": -2.0,
+        "4": 38.0
+      }
+    }
+  },
+  "complete_models": [
+    "e2_dir-claude-haiku-4-5",
+    "e2_dir-deepseek-v4-flash",
+    "e2_dir-frontier-qwen",
+    "e2_dir-gemma-4-31b",
+    "e2_dir-phi-4"
+  ],
+  "incomplete_models": [],
+  "panel": {
+    "steward": {
+      "k": 5,
+      "sd_across_reps": {
+        "mean": 2.583828924428028,
+        "range": [
+          0.0,
+          7.6681158050723255
+        ]
+      },
+      "agreement": {
+        "mean": 76.0,
+        "range": [
+          12.0,
+          100.0
+        ]
+      },
+      "icc1": {
+        "mean": 0.09151837031793149,
+        "range": [
+          0.019234524506932874,
+          0.1516620498614958
+        ]
+      },
+      "determinism": {
+        "mean": 95.0,
+        "range": [
+          85.0,
+          100.0
+        ]
+      },
+      "t0_minus_t07": {
+        "mean": -3.84,
+        "ci": [
+          -10.20623787545178,
+          2.5262378754517814
+        ],
+        "k": 5
+      }
+    },
+    "devotion": {
+      "k": 5,
+      "sd_across_reps": {
+        "mean": 4.725357770837186,
+        "range": [
+          0.8944271909999159,
+          9.695359714832659
+        ]
+      },
+      "agreement": {
+        "mean": 45.54285714285714,
+        "range": [
+          12.0,
+          98.0
+        ]
+      },
+      "icc1": {
+        "mean": 0.10676275999082036,
+        "range": [
+          4.336808689942017e-17,
+          0.2971887550200807
+        ]
+      },
+      "determinism": {
+        "mean": 86.89473684210526,
+        "range": [
+          70.0,
+          100.0
+        ]
+      },
+      "t0_minus_t07": {
+        "mean": 5.074285714285713,
+        "ci": [
+          -0.1817852608309911,
+          10.330356689402418
+        ],
+        "k": 5
+      }
+    },
+    "contrast": {
+      "per_rep_model_equal": [
+        38.88333333333333,
+        39.02978723404255,
+        40.61818181818182,
+        38.04081632653061,
+        48.678260869565214
+      ],
+      "mean": 41.050075916330705,
+      "sd_across_reps": 4.364851694282659,
+      "min": 38.04081632653061,
+      "max": 48.678260869565214,
+      "per_model_sd": {
+        "e2_dir-frontier-qwen": 4.651647089729573,
+        "e2_dir-deepseek-v4-flash": 0.8944271909999159,
+        "e2_dir-claude-haiku-4-5": 7.402702209328699,
+        "e2_dir-gemma-4-31b": 4.147288270665544,
+        "e2_dir-phi-4": 15.453155017665486
+      }
+    }
+  }
+}

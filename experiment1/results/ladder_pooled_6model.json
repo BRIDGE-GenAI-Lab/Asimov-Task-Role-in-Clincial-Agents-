@@ -1,0 +1,210 @@
+{
+  "note": "Canonical ICU ladder (same files as figures/capability_slope). Crude ORs with logit 95% CI. Pooled = mean across 6 primary models, t-based 95% CI (df=5).",
+  "canonical_files": {
+    "Gemma-3 12B": "ward_exp1_v2.jsonl",
+    "DeepSeek-V4 Flash": "ward_ds_ladder_v2.jsonl",
+    "DeepSeek-V4 Pro": "ward_ds_pro_icu.jsonl",
+    "Gemini-2.5 Flash": "ward_gem25f_ladder.jsonl",
+    "GPT-5.1": "ward_gpt51_icu.jsonl",
+    "Claude Haiku 4.5": "ward_haiku_icu.jsonl"
+  },
+  "per_model_chr": {
+    "Gemma-3 12B": {
+      "steward": 13.2,
+      "empathetic": 69.6,
+      "guardrail": 65.2,
+      "neutral": 66.8,
+      "devotion": 82.0
+    },
+    "DeepSeek-V4 Flash": {
+      "steward": 17.2,
+      "empathetic": 35.0,
+      "guardrail": 38.8,
+      "neutral": 76.8,
+      "devotion": 88.5
+    },
+    "DeepSeek-V4 Pro": {
+      "steward": 20.2,
+      "empathetic": 14.4,
+      "guardrail": 19.6,
+      "neutral": 66.3,
+      "devotion": 87.8
+    },
+    "Gemini-2.5 Flash": {
+      "steward": 5.0,
+      "empathetic": 48.0,
+      "guardrail": 33.0,
+      "neutral": 45.0,
+      "devotion": 49.0
+    },
+    "GPT-5.1": {
+      "steward": 4.0,
+      "empathetic": 23.0,
+      "guardrail": 11.0,
+      "neutral": 28.0,
+      "devotion": 67.0
+    },
+    "Claude Haiku 4.5": {
+      "steward": 12.0,
+      "empathetic": 54.0,
+      "guardrail": 33.0,
+      "neutral": 49.0,
+      "devotion": 57.0
+    }
+  },
+  "pooled_per_arm": {
+    "steward": {
+      "mean": 11.9,
+      "ci_lo": 5.2,
+      "ci_hi": 18.7,
+      "n_models": 6,
+      "range": [
+        4.0,
+        20.2
+      ]
+    },
+    "empathetic": {
+      "mean": 40.7,
+      "ci_lo": 19.1,
+      "ci_hi": 62.2,
+      "n_models": 6,
+      "range": [
+        14.4,
+        69.6
+      ]
+    },
+    "guardrail": {
+      "mean": 33.4,
+      "ci_lo": 13.9,
+      "ci_hi": 53.0,
+      "n_models": 6,
+      "range": [
+        11.0,
+        65.2
+      ]
+    },
+    "neutral": {
+      "mean": 55.3,
+      "ci_lo": 36.5,
+      "ci_hi": 74.1,
+      "n_models": 6,
+      "range": [
+        28.0,
+        76.8
+      ]
+    },
+    "devotion": {
+      "mean": 71.9,
+      "ci_lo": 54.3,
+      "ci_hi": 89.4,
+      "n_models": 6,
+      "range": [
+        49.0,
+        88.5
+      ]
+    }
+  },
+  "pooled_devotion_minus_steward_pp": {
+    "mean": 59.9,
+    "ci_lo": 47.1,
+    "ci_hi": 72.8
+  },
+  "gemma_contrasts": {
+    "devotion_vs_steward": [
+      30.0,
+      18.4,
+      48.8
+    ],
+    "assignment_neutral_vs_steward": [
+      13.2,
+      8.4,
+      20.8
+    ],
+    "instruction_devotion_vs_neutral": [
+      2.3,
+      1.5,
+      3.4
+    ],
+    "empathetic_vs_neutral": [
+      1.1,
+      0.8,
+      1.7
+    ]
+  },
+  "deepseek_flash_contrasts": {
+    "devotion_vs_steward": [
+      36.9,
+      24.7,
+      55.2
+    ],
+    "assignment_neutral_vs_steward": [
+      15.8,
+      11.2,
+      22.4
+    ],
+    "instruction_devotion_vs_neutral": [
+      2.3,
+      1.6,
+      3.4
+    ],
+    "empathetic_vs_neutral": [
+      0.2,
+      0.1,
+      0.2
+    ]
+  },
+  "deepseek_flash_chr_ci": {
+    "steward": [
+      17.2,
+      13.9,
+      21.3
+    ],
+    "empathetic": [
+      35.0,
+      30.5,
+      39.8
+    ],
+    "guardrail": [
+      38.8,
+      34.1,
+      43.6
+    ],
+    "neutral": [
+      76.8,
+      72.4,
+      80.6
+    ],
+    "devotion": [
+      88.5,
+      85.0,
+      91.3
+    ]
+  },
+  "gemma_chr_ci": {
+    "steward": [
+      13.2,
+      9.6,
+      18.0
+    ],
+    "empathetic": [
+      69.6,
+      63.6,
+      75.0
+    ],
+    "guardrail": [
+      65.2,
+      59.1,
+      70.8
+    ],
+    "neutral": [
+      66.8,
+      60.7,
+      72.3
+    ],
+    "devotion": [
+      82.0,
+      76.8,
+      86.3
+    ]
+  }
+}

@@ -1,0 +1,253 @@
+{
+  "instrument": "two_ward imaging-side variant (ward_scenarios_2ward.jsonl)",
+  "source_run": "output/intermediate/ward_boundary_seven.jsonl",
+  "steward_floor_pct": 17.0,
+  "n_per_cell": 100,
+  "n_reps": 1,
+  "models": {
+    "deepseek-v4-pro": {
+      "parse_failures": 2,
+      "chr": {
+        "devotion": {
+          "pct": 80.0,
+          "ci": [
+            71.1,
+            86.7
+          ],
+          "k": 80,
+          "n": 100
+        },
+        "ward_steward": {
+          "pct": 30.0,
+          "ci": [
+            21.9,
+            39.6
+          ],
+          "k": 30,
+          "n": 100
+        },
+        "global_steward": {
+          "pct": 14.0,
+          "ci": [
+            8.5,
+            22.1
+          ],
+          "k": 14,
+          "n": 100
+        }
+      },
+      "ward_vs_global": {
+        "or": 2.63,
+        "ci": [
+          1.3,
+          5.35
+        ],
+        "p": 0.00994,
+        "gap_pp": 16.0
+      },
+      "devotion_vs_ward": {
+        "or": 9.33,
+        "ci": [
+          4.87,
+          17.89
+        ],
+        "p": 1.05e-12,
+        "gap_pp": 50.0
+      },
+      "monotone_containment": true,
+      "global_clears_floor": true
+    },
+    "llama-4-maverick": {
+      "parse_failures": 2,
+      "chr": {
+        "devotion": {
+          "pct": 65.0,
+          "ci": [
+            55.3,
+            73.6
+          ],
+          "k": 65,
+          "n": 100
+        },
+        "ward_steward": {
+          "pct": 56.0,
+          "ci": [
+            46.2,
+            65.3
+          ],
+          "k": 56,
+          "n": 100
+        },
+        "global_steward": {
+          "pct": 43.0,
+          "ci": [
+            33.7,
+            52.8
+          ],
+          "k": 43,
+          "n": 100
+        }
+      },
+      "ward_vs_global": {
+        "or": 1.69,
+        "ci": [
+          0.96,
+          2.95
+        ],
+        "p": 0.0894,
+        "gap_pp": 13.0
+      },
+      "devotion_vs_ward": {
+        "or": 1.46,
+        "ci": [
+          0.83,
+          2.58
+        ],
+        "p": 0.247,
+        "gap_pp": 9.0
+      },
+      "monotone_containment": true,
+      "global_clears_floor": false
+    }
+  },
+  "reference_main_text_flash_bed": {
+    "instrument": "two_ward bed-side variant (ward_scenarios_2ward_bed.jsonl -> ward_ds_boundary_b.jsonl)",
+    "model": "deepseek-v4-flash",
+    "chr": {
+      "devotion": {
+        "pct": 76.8,
+        "ci": [
+          67.5,
+          84.0
+        ],
+        "n": 99
+      },
+      "ward_steward": {
+        "pct": 66.7,
+        "ci": [
+          56.9,
+          75.2
+        ],
+        "n": 99
+      },
+      "global_steward": {
+        "pct": 28.6,
+        "ci": [
+          20.6,
+          38.2
+        ],
+        "n": 98
+      }
+    }
+  },
+  "bed_side_replication": {
+    "instrument": "two_ward bed-side variant (ward_scenarios_2ward_bed.jsonl)",
+    "source_run": "output/intermediate/ward_boundary_seven_bed.jsonl",
+    "models": {
+      "deepseek-v4-pro": {
+        "parse_failures": 0,
+        "chr": {
+          "devotion": {
+            "pct": 82.0,
+            "ci": [
+              73.3,
+              88.3
+            ],
+            "k": 82,
+            "n": 100
+          },
+          "ward_steward": {
+            "pct": 40.0,
+            "ci": [
+              30.9,
+              49.8
+            ],
+            "k": 40,
+            "n": 100
+          },
+          "global_steward": {
+            "pct": 8.0,
+            "ci": [
+              4.1,
+              15.0
+            ],
+            "k": 8,
+            "n": 100
+          }
+        },
+        "ward_vs_global": {
+          "or": 7.67,
+          "ci": [
+            3.36,
+            17.51
+          ],
+          "p": 1.2e-07,
+          "gap_pp": 32.0
+        },
+        "devotion_vs_ward": {
+          "or": 6.83,
+          "ci": [
+            3.57,
+            13.07
+          ],
+          "p": 1.39e-09,
+          "gap_pp": 42.0
+        },
+        "monotone_containment": true,
+        "global_clears_floor": true
+      },
+      "llama-4-maverick": {
+        "parse_failures": 2,
+        "chr": {
+          "devotion": {
+            "pct": 59.0,
+            "ci": [
+              49.2,
+              68.1
+            ],
+            "k": 59,
+            "n": 100
+          },
+          "ward_steward": {
+            "pct": 51.0,
+            "ci": [
+              41.3,
+              60.6
+            ],
+            "k": 51,
+            "n": 100
+          },
+          "global_steward": {
+            "pct": 42.0,
+            "ci": [
+              32.8,
+              51.8
+            ],
+            "k": 42,
+            "n": 100
+          }
+        },
+        "ward_vs_global": {
+          "or": 1.44,
+          "ci": [
+            0.82,
+            2.51
+          ],
+          "p": 0.257,
+          "gap_pp": 9.0
+        },
+        "devotion_vs_ward": {
+          "or": 1.38,
+          "ci": [
+            0.79,
+            2.42
+          ],
+          "p": 0.32,
+          "gap_pp": 8.0
+        },
+        "monotone_containment": true,
+        "global_clears_floor": false
+      }
+    }
+  }
+}

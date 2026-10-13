@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite the paper below."
+title: "Advocacy instructions, assigned scope and adherence to shared-resource allocation rules by clinical AI agents: a controlled, agent-based experimental study of 24 large language models"
+authors:
+  - family-names: Gorenshtein
+    given-names: Alon
+  - family-names: Omar
+    given-names: Mahmud
+  - family-names: Barash
+    given-names: Yiftach
+  - family-names: Kruskal
+    given-names: Jonathan B.
+  - family-names: Ahmed
+    given-names: Muneeb
+  - family-names: Brook
+    given-names: Olga R.
+  - family-names: Klang
+    given-names: Eyal
+license: MIT
+repository-code: "https://github.com/BRIDGE-GenAI-Lab/Asimov-Task-Role-in-Clincial-Agents-"

@@ -1,0 +1,510 @@
+{
+  "design": "orthogonal 2x2, matched syntax: scope {single-patient, whole-ward} x loyalty {absent, present}; rules stated in all cells; 2-ward bed instrument",
+  "note": "Expanded to 12 self-hosted pinned-weight models (from 4). PRIMARY pooled estimate is DerSimonian-Laird random-effects given between-model heterogeneity (down-weights outliers); fixed-effect inverse-variance, per-model spread, and leave-one-out also reported. Models with any 2x2 cell < 95 obs excluded.",
+  "excluded_incomplete": {},
+  "per_model": {
+    "falcon3-10b-o2": {
+      "n_total": 400,
+      "n_per_cell": 100,
+      "cells_pct": {
+        "patient_plain": 72.0,
+        "patient_loyal": 78.0,
+        "ward_plain": 62.0,
+        "ward_loyal": 66.0
+      },
+      "scope_pp": 11.0,
+      "scope_ci95": [
+        2.1,
+        19.9
+      ],
+      "loyalty_pp": 5.0,
+      "loyalty_ci95": [
+        -3.9,
+        13.9
+      ],
+      "interaction_pp": -2.0,
+      "interaction_ci95": [
+        -19.9,
+        15.9
+      ],
+      "scope_gt_loyalty": true,
+      "contrast_scope_minus_wording_pp": 6.0,
+      "contrast_ci95": [
+        -6.8,
+        18.8
+      ],
+      "contrast_p": 0.358
+    },
+    "gemma4-12b-o2": {
+      "n_total": 400,
+      "n_per_cell": 100,
+      "cells_pct": {
+        "patient_plain": 81.0,
+        "patient_loyal": 90.0,
+        "ward_plain": 18.0,
+        "ward_loyal": 39.0
+      },
+      "scope_pp": 57.0,
+      "scope_ci95": [
+        49.2,
+        64.8
+      ],
+      "loyalty_pp": 15.0,
+      "loyalty_ci95": [
+        7.2,
+        22.8
+      ],
+      "interaction_pp": 12.0,
+      "interaction_ci95": [
+        -3.5,
+        27.5
+      ],
+      "scope_gt_loyalty": true,
+      "contrast_scope_minus_wording_pp": 42.0,
+      "contrast_ci95": [
+        29.7,
+        54.3
+      ],
+      "contrast_p": 0.0
+    },
+    "gemma4-31b-o2": {
+      "n_total": 396,
+      "n_per_cell": 97,
+      "cells_pct": {
+        "patient_plain": 66.7,
+        "patient_loyal": 82.0,
+        "ward_plain": 54.0,
+        "ward_loyal": 60.8
+      },
+      "scope_pp": 16.9,
+      "scope_ci95": [
+        7.8,
+        26.0
+      ],
+      "loyalty_pp": 11.1,
+      "loyalty_ci95": [
+        2.0,
+        20.2
+      ],
+      "interaction_pp": -8.5,
+      "interaction_ci95": [
+        -26.7,
+        9.7
+      ],
+      "scope_gt_loyalty": true,
+      "contrast_scope_minus_wording_pp": 5.8,
+      "contrast_ci95": [
+        -7.6,
+        19.3
+      ],
+      "contrast_p": 0.3942
+    },
+    "glm47-flash-o2": {
+      "n_total": 400,
+      "n_per_cell": 100,
+      "cells_pct": {
+        "patient_plain": 39.0,
+        "patient_loyal": 40.0,
+        "ward_plain": 33.0,
+        "ward_loyal": 37.0
+      },
+      "scope_pp": 4.5,
+      "scope_ci95": [
+        -5.0,
+        14.0
+      ],
+      "loyalty_pp": 2.5,
+      "loyalty_ci95": [
+        -7.0,
+        12.0
+      ],
+      "interaction_pp": 3.0,
+      "interaction_ci95": [
+        -15.9,
+        21.9
+      ],
+      "scope_gt_loyalty": true,
+      "contrast_scope_minus_wording_pp": 2.0,
+      "contrast_ci95": [
+        -11.5,
+        15.5
+      ],
+      "contrast_p": 0.7707
+    },
+    "granite41-30b-o2": {
+      "n_total": 400,
+      "n_per_cell": 100,
+      "cells_pct": {
+        "patient_plain": 25.0,
+        "patient_loyal": 25.0,
+        "ward_plain": 21.0,
+        "ward_loyal": 15.0
+      },
+      "scope_pp": 7.0,
+      "scope_ci95": [
+        -1.0,
+        15.0
+      ],
+      "loyalty_pp": -3.0,
+      "loyalty_ci95": [
+        -11.0,
+        5.0
+      ],
+      "interaction_pp": -6.0,
+      "interaction_ci95": [
+        -22.0,
+        10.0
+      ],
+      "scope_gt_loyalty": true,
+      "contrast_scope_minus_wording_pp": 10.0,
+      "contrast_ci95": [
+        -1.0,
+        21.0
+      ],
+      "contrast_p": 0.0748
+    },
+    "internlm3-8b-o2": {
+      "n_total": 400,
+      "n_per_cell": 100,
+      "cells_pct": {
+        "patient_plain": 57.0,
+        "patient_loyal": 56.0,
+        "ward_plain": 71.0,
+        "ward_loyal": 70.0
+      },
+      "scope_pp": -14.0,
+      "scope_ci95": [
+        -23.3,
+        -4.7
+      ],
+      "loyalty_pp": -1.0,
+      "loyalty_ci95": [
+        -10.3,
+        8.3
+      ],
+      "interaction_pp": -0.0,
+      "interaction_ci95": [
+        -18.7,
+        18.7
+      ],
+      "scope_gt_loyalty": false,
+      "contrast_scope_minus_wording_pp": -13.0,
+      "contrast_ci95": [
+        -26.2,
+        0.2
+      ],
+      "contrast_p": 0.054
+    },
+    "mistral-small32-o2": {
+      "n_total": 400,
+      "n_per_cell": 100,
+      "cells_pct": {
+        "patient_plain": 72.0,
+        "patient_loyal": 73.0,
+        "ward_plain": 58.0,
+        "ward_loyal": 61.0
+      },
+      "scope_pp": 13.0,
+      "scope_ci95": [
+        3.8,
+        22.2
+      ],
+      "loyalty_pp": 2.0,
+      "loyalty_ci95": [
+        -7.2,
+        11.2
+      ],
+      "interaction_pp": 2.0,
+      "interaction_ci95": [
+        -16.4,
+        20.4
+      ],
+      "scope_gt_loyalty": true,
+      "contrast_scope_minus_wording_pp": 11.0,
+      "contrast_ci95": [
+        -2.0,
+        24.0
+      ],
+      "contrast_p": 0.0971
+    },
+    "olmo2-32b-o2": {
+      "n_total": 400,
+      "n_per_cell": 100,
+      "cells_pct": {
+        "patient_plain": 41.0,
+        "patient_loyal": 46.0,
+        "ward_plain": 44.0,
+        "ward_loyal": 51.0
+      },
+      "scope_pp": -4.0,
+      "scope_ci95": [
+        -13.7,
+        5.7
+      ],
+      "loyalty_pp": 6.0,
+      "loyalty_ci95": [
+        -3.7,
+        15.7
+      ],
+      "interaction_pp": 2.0,
+      "interaction_ci95": [
+        -17.5,
+        21.5
+      ],
+      "scope_gt_loyalty": false,
+      "contrast_scope_minus_wording_pp": -10.0,
+      "contrast_ci95": [
+        -23.7,
+        3.7
+      ],
+      "contrast_p": 0.1539
+    },
+    "phi4-mini-o2": {
+      "n_total": 400,
+      "n_per_cell": 100,
+      "cells_pct": {
+        "patient_plain": 66.0,
+        "patient_loyal": 62.0,
+        "ward_plain": 80.0,
+        "ward_loyal": 76.0
+      },
+      "scope_pp": -14.0,
+      "scope_ci95": [
+        -22.8,
+        -5.2
+      ],
+      "loyalty_pp": -4.0,
+      "loyalty_ci95": [
+        -12.8,
+        4.8
+      ],
+      "interaction_pp": 0.0,
+      "interaction_ci95": [
+        -17.6,
+        17.6
+      ],
+      "scope_gt_loyalty": false,
+      "contrast_scope_minus_wording_pp": -10.0,
+      "contrast_ci95": [
+        -22.5,
+        2.5
+      ],
+      "contrast_p": 0.1169
+    },
+    "phi4-o2": {
+      "n_total": 400,
+      "n_per_cell": 100,
+      "cells_pct": {
+        "patient_plain": 92.0,
+        "patient_loyal": 92.0,
+        "ward_plain": 89.0,
+        "ward_loyal": 88.0
+      },
+      "scope_pp": 3.5,
+      "scope_ci95": [
+        -2.3,
+        9.3
+      ],
+      "loyalty_pp": -0.5,
+      "loyalty_ci95": [
+        -6.3,
+        5.3
+      ],
+      "interaction_pp": -1.0,
+      "interaction_ci95": [
+        -12.6,
+        10.6
+      ],
+      "scope_gt_loyalty": true,
+      "contrast_scope_minus_wording_pp": 4.0,
+      "contrast_ci95": [
+        -4.3,
+        12.3
+      ],
+      "contrast_p": 0.3447
+    },
+    "qwen35-27b-o2": {
+      "n_total": 400,
+      "n_per_cell": 100,
+      "cells_pct": {
+        "patient_plain": 73.0,
+        "patient_loyal": 70.0,
+        "ward_plain": 66.0,
+        "ward_loyal": 67.0
+      },
+      "scope_pp": 5.0,
+      "scope_ci95": [
+        -4.0,
+        14.0
+      ],
+      "loyalty_pp": -1.0,
+      "loyalty_ci95": [
+        -10.0,
+        8.0
+      ],
+      "interaction_pp": 4.0,
+      "interaction_ci95": [
+        -14.1,
+        22.1
+      ],
+      "scope_gt_loyalty": true,
+      "contrast_scope_minus_wording_pp": 6.0,
+      "contrast_ci95": [
+        -6.7,
+        18.7
+      ],
+      "contrast_p": 0.3535
+    },
+    "yi-34b-o2": {
+      "n_total": 400,
+      "n_per_cell": 100,
+      "cells_pct": {
+        "patient_plain": 46.0,
+        "patient_loyal": 50.0,
+        "ward_plain": 33.0,
+        "ward_loyal": 37.0
+      },
+      "scope_pp": 13.0,
+      "scope_ci95": [
+        3.4,
+        22.6
+      ],
+      "loyalty_pp": 4.0,
+      "loyalty_ci95": [
+        -5.6,
+        13.6
+      ],
+      "interaction_pp": 0.0,
+      "interaction_ci95": [
+        -19.1,
+        19.1
+      ],
+      "scope_gt_loyalty": true,
+      "contrast_scope_minus_wording_pp": 9.0,
+      "contrast_ci95": [
+        -4.6,
+        22.6
+      ],
+      "contrast_p": 0.1946
+    }
+  },
+  "pooled_random_effect": {
+    "scope": {
+      "pp": 8.3,
+      "ci95": [
+        -2.5,
+        19.1
+      ],
+      "p": 0.1331,
+      "tau2_pp2": 346.22,
+      "I2_pct": 94.8,
+      "Q": 212.76,
+      "df": 11,
+      "k": 12
+    },
+    "loyalty": {
+      "pp": 2.9,
+      "ci95": [
+        -0.4,
+        6.3
+      ],
+      "p": 0.0875,
+      "tau2_pp2": 15.86,
+      "I2_pct": 45.7,
+      "Q": 20.24,
+      "df": 11,
+      "k": 12
+    },
+    "note": "DerSimonian-Laird; pp = risk difference in percentage points; I2 and tau2 quantify between-model heterogeneity"
+  },
+  "pooled_hartung_knapp": {
+    "scope": {
+      "pp": 8.3,
+      "ci95": [
+        -3.4,
+        20.0
+      ],
+      "se": 5.305,
+      "df": 11,
+      "t_crit": 2.201,
+      "method": "Hartung-Knapp-Sidik-Jonkman, t interval on k-1 df"
+    },
+    "loyalty": {
+      "pp": 2.9,
+      "ci95": [
+        -0.8,
+        6.6
+      ],
+      "se": 1.677,
+      "df": 11,
+      "t_crit": 2.201,
+      "method": "Hartung-Knapp-Sidik-Jonkman, t interval on k-1 df"
+    },
+    "contrast_scope_minus_wording": {
+      "pp": 5.3,
+      "ci95": [
+        -3.7,
+        14.4
+      ],
+      "se": 4.106,
+      "df": 11,
+      "t_crit": 2.201,
+      "method": "Hartung-Knapp-Sidik-Jonkman, t interval on k-1 df"
+    },
+    "note": "Hartung-Knapp-Sidik-Jonkman t interval on k-1 df, reusing the DL tau2; reported alongside pooled_random_effect (DL), not in place of it, because the DL normal interval is anticonservative at k=12 with I2=94.8%."
+  },
+  "pooled_fixed_effect": {
+    "scope_pp": 9.1,
+    "scope_ci95": [
+      6.6,
+      11.5
+    ],
+    "loyalty_pp": 2.8,
+    "loyalty_ci95": [
+      0.3,
+      5.2
+    ]
+  },
+  "contrast_scope_minus_wording": {
+    "random_effect": {
+      "pp": 5.3,
+      "ci95": [
+        -2.5,
+        13.2
+      ],
+      "p": 0.1831,
+      "tau2_pp2": 152.52,
+      "I2_pct": 79.7,
+      "Q": 54.29,
+      "df": 11,
+      "k": 12
+    },
+    "fixed_pooled_pp": 5.6,
+    "fixed_ci95": [
+      2.1,
+      9.1
+    ],
+    "fixed_p": 0.0016,
+    "note": "direct contrast = (patient-plain cell) - (ward-loyal cell). Random-effect (DL) is primary; fixed-effect shown for comparison."
+  },
+  "leave_one_out_fixed_contrast": {
+    "by_model_pp": {
+      "falcon3-10b-o2": 5.6,
+      "gemma4-12b-o2": 2.4,
+      "gemma4-31b-o2": 5.6,
+      "glm47-flash-o2": 5.9,
+      "granite41-30b-o2": 5.1,
+      "internlm3-8b-o2": 7.0,
+      "mistral-small32-o2": 5.2,
+      "olmo2-32b-o2": 6.7,
+      "phi4-mini-o2": 7.0,
+      "phi4-o2": 6.0,
+      "qwen35-27b-o2": 5.6,
+      "yi-34b-o2": 5.4
+    },
+    "most_influential": "gemma4-12b-o2",
+    "contrast_without_most_influential_pp": 2.4
+  },
+  "scope_gt_loyalty_in": 9,
+  "n_models": 12
+}
